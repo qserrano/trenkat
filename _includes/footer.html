@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="{{ '/assets/css/footer-style.css' | relative_url }}">
+
+<footer>
+  <div class="footer-content-left">
+    <ul class="contact-list">
+      {% if site.author.name -%}
+        <li class="p-name">{{ site.author.name | escape }}</li>
+      {% endif -%}
+      {% if site.author.email -%}
+        <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+      {%- endif %}
+      <li>© {{ site.time | date: "%Y" }} Q. Serrano</li>
+    </ul>
+  </div>
+  <div class="footer-content-center">
+    <div class="social-icons">
+      <a href="https://linkedin.com/in/qserrano" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://twitter.com/qserrano" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://github.com/qserrano" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+  <div class="footer-content-right">
+    <p>{{ site.description }}</p>
+  </div>
+</footer>

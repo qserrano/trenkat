@@ -1,0 +1,36 @@
+:root {
+  /* Tema claro */
+  /* Colores de fondo */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #CCCCCC;
+  
+  /* Colores de texto */
+  --text-primary: #2C2C2C;
+  --text-secondary: #2C2C2C;
+  
+  /* Colores de acento */
+  --accent-primary: #007BFF;    /* Azul eléctrico - color principal */
+  --accent-secondary: #A6FF00;  /* Verde lima neón - detalles y acentos */
+  --accent-tertiary: #FF6B35;   /* Naranja vibrante - tercer acento */
+}
+
+[data-theme="dark"] {
+  /* Tema oscuro */
+  /* Colores de fondo */
+  --bg-primary: #000000;        /* Fondo casi negro */
+  --bg-secondary: #1A1A1A;      /* Gris muy oscuro para el tema oscuro */
+  
+  /* Colores de texto */
+  --text-primary: #FFFFFF;
+  --text-secondary: #CCCCCC;
+  
+  /* Los acentos se mantienen para consistencia de marca */
+  --accent-primary: #007BFF;
+  --accent-secondary: #A6FF00;
+  --accent-tertiary: #FF6B35;
+}
+
+/* Aseguramos transiciones suaves entre temas */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+} 

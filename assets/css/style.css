@@ -1,0 +1,105 @@
+body {
+    font-family: system-ui, sans-serif;
+    margin: 2rem auto;
+    max-width: 1000px;
+    line-height: 1.6;
+    padding: 0 1rem;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+code {
+    background-color: #1e1e1e;
+    color: var(--text-secondary);
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+  }
+  
+pre {
+    background-color: #1e1e1e;
+    color: var(--text-secondary);
+    padding: 1em;
+    overflow-x: auto;
+    border-radius: 6px;
+    }
+
+a {
+    color: var(--accent-primary);
+}
+
+a:hover {
+    color: var(--accent-secondary);
+}
+
+
+
+
+  
+h1:not(.site-title), h2, h3, h4, h5, h6 {
+    color: var(--accent-primary);
+}
+
+h1 a {
+    text-decoration: none;
+    color: var(--accent-primary);
+}
+
+h1 a:hover {
+    text-decoration: underline;
+    color: var(--accent-secondary);
+}
+  
+ul {
+    list-style: disc;
+    padding-left: 2rem;
+}
+  
+li {
+    margin-bottom: 0rem;
+    padding-bottom: 0rem;
+}
+  
+.pagination {
+    text-align: center;
+    margin-top: 2rem;
+}
+  
+.pagination a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: var(--accent-primary);
+}
+
+.pagination a:hover {
+    color: var(--accent-secondary);
+}
+
+.post {
+    /*background-color: var(--bg-secondary);*/
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.post-footer {
+    border-top: 0px solid var(--accent-primary);
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: var(--text-secondary);
+    margin: 20px 0;
+    width: 100%;
+}
+
+.home-image {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.home-image img {
+    max-width: 80%;
+    height: auto;
+}

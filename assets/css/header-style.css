@@ -1,0 +1,105 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('/assets/imatges/logos/header-img.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(3.9, 3.9, 3.9, 0.7); /* Fondo blanco con 70% de opacidad */
+    background-blend-mode: overlay; /* Mezcla la imagen con el color de fondo */
+}
+
+.header-site-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.header-site-title-logo {
+    margin-top: 0;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: var(--accent-primary);
+}
+  
+nav a:hover {
+    text-decoration: underline;
+    color: var(--accent-secondary);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--bg-secondary);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: var(--text-primary);
+    padding: 2px 2px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    color: var(--accent-secondary);
+    text-decoration: none;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+} 
+
+h1 {
+    margin: 0;
+}
+
+/* Estilos específicos para el título del sitio */
+.site-title {
+    font-family: 'Roboto Condensed', 'Arial Narrow', 'Helvetica Condensed', sans-serif !important;
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: var(--text-primary);
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    text-shadow: 3px 3px 4px rgba(255, 255, 255, 0.5);
+}
+
+/* Regla más específica para asegurar que se aplique */
+h1.site-title {
+    font-family: 'Roboto Condensed', 'Arial Narrow', 'Helvetica Condensed', sans-serif !important;
+}
+
+.site-title a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.site-title a:hover {
+    color: var(--accent-secondary);
+    text-decoration: none;
+}
+
+#cartrotech-link:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+#cartrotech-link:hover img {
+    filter: brightness(1.1);
+}

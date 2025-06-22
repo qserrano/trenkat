@@ -1,0 +1,47 @@
+/* Importación de fuentes Montserrat desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Importación de fuentes Roboto Condensed desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Configuración global de tipografía*/
+/* * {
+    font-family: 'Montserrat', sans-serif;
+}*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* Montserrat Regular */
+    line-height: 1.6;
+}
+
+/* Clases para diferentes pesos de fuente */
+.font-regular {
+    font-weight: 400; /* Montserrat Regular */
+}
+
+.font-bold {
+    font-weight: 700; /* Montserrat Bold */
+}
+
+/* Aplicar Montserrat Bold a elementos importantes */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Montserrat Bold */
+}
+
+/* Aplicar Montserrat Bold a elementos de navegación */
+nav, .nav, .navigation {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Montserrat Bold */
+}
+
+/* Aplicar Montserrat Bold a botones */
+button, .btn, input[type="submit"] {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* Montserrat Bold */
+}
+
+h1.site-title {
+    font-family: 'Roboto Condensed', 'Arial Narrow', 'Helvetica Condensed', sans-serif !important;
+}
