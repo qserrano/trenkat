@@ -4,7 +4,7 @@ title: "Guía de las familias de placas Arduino"
 author: "qode66"
 description: "Explora las diferentes familias de placas Arduino y encuentra la mejor opción para tu proyecto."
 date: 2025-05-27 13:15:00 +0200
-categories: arduino
+categories: arduino news
 excerpt: "En esta publicación, exploraremos las diferentes familias de placas Arduino y encontraremos la mejor opción para tu proyecto."
 tags: ["arduino", "placa", "IoT", "automatización"]
 ---

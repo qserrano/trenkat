@@ -4,7 +4,7 @@ title: "Nuestro primer programa"
 author: "qode66"
 description: "En esta lección aprenderemos a programar nuestro primer programa en Arduino."
 date: 2021-06-23 14:45:00 +0200
-categories: arduino basic iniciacion
+categories: arduino basic
 excerpt: "En esta lección aprenderemos a programar nuestro primer programa en Arduino."
 tags: ["arduino", "programación", "boceto", "sketch", "IDE"]
 ---
