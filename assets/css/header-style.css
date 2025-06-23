@@ -2,12 +2,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url('/assets/imatges/logos/header-img.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: rgba(3.9, 3.9, 3.9, 0.7); /* Fondo blanco con 70% de opacidad */
-    background-blend-mode: overlay; /* Mezcla la imagen con el color de fondo */
+
 }
 
 .header-site-title {
@@ -101,5 +96,5 @@ h1.site-title {
 }
 
 #cartrotech-link:hover img {
-    filter: brightness(1.1);
+    filter: brightness(1.2);
 }

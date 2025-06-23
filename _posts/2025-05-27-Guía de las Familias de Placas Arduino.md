@@ -1,5 +1,7 @@
 ---
+layout: post
 title: "Guía de las familias de placas Arduino"
+author: "qode66"
 description: "Explora las diferentes familias de placas Arduino y encuentra la mejor opción para tu proyecto."
 date: 2025-05-27 13:15:00 +0200
 categories: arduino
@@ -14,13 +16,13 @@ tags: ["arduino", "placa", "IoT", "automatización"]
 [img5]: /assets/imatges/blog/01-guia-de-placas/arduino-starter-kit.jpg "Arduino Starter Kit"
 [img6]: /assets/imatges/blog/01-guia-de-placas/placas-arduino.png "Placas Arduino"
 
-![Placas Arduino][img6]
+![Placas Arduino][img6]{: .centered}
 
 Arduino ha desarrollado una amplia gama de placas para adaptarse a diferentes proyectos y necesidades. Desde placas compactas hasta modelos con conectividad avanzada, cada familia tiene su propia identidad y propósito. En esta publicación exploraremos las principales familias y sus características.
 
 ## 📌 **Familia Nano: Compactas y Versátiles**
 
-![Arduino Nano][img1]
+![Arduino Nano][img1]{: .centered}
 
 Las placas de la familia **Nano** destacan por su tamaño reducido y potencia. Son ideales para proyectos donde el espacio es limitado y requieren bajo consumo energético.
 
@@ -36,7 +38,7 @@ Las placas de la familia **Nano** destacan por su tamaño reducido y potencia. S
 
 ## 📌 **Familia MKR: Modular y con Conectividad Avanzada**
 
-![Arduino MKR][img2]
+![Arduino MKR][img2]{: .centered}
 
 La familia **MKR** está orientada a proyectos de **IoT** y aplicaciones que requieren comunicación inalámbrica segura.
 
@@ -51,7 +53,7 @@ La familia **MKR** está orientada a proyectos de **IoT** y aplicaciones que req
 
 ## 📌 **Familia Classic: La Base de Arduino**
 
-![Arduino UNO][img3]
+![Arduino UNO][img3]{: .centered}
 
 Las placas de la familia **Classic** incluyen modelos emblemáticos como el **Arduino UNO**, **Leonardo** y **Micro**, consideradas la base del ecosistema Arduino.
 
@@ -65,7 +67,7 @@ Las placas de la familia **Classic** incluyen modelos emblemáticos como el **Ar
 
 ## 📌 **Familia Mega: Potencia y Expansión**
 
-![Arduino Mega][img4]
+![Arduino Mega][img4]{: .centered}
 
 Las placas **Mega** están diseñadas para proyectos que requieren **más pines GPIO y mayor capacidad de procesamiento**.
 
@@ -79,7 +81,7 @@ Las placas **Mega** están diseñadas para proyectos que requieren **más pines 
 
 ## 📌 **Kits y Shields**
 
-![Arduino Starter Kit][img5]
+![Arduino Starter Kit][img5]{: .centered}
 
 Arduino también ofrece **kits** y **shields** que complementan las placas con sensores, módulos de conectividad y funciones adicionales.
 

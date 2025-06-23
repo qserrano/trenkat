@@ -1,13 +1,13 @@
 ---
+layout: post
 title: "El entorno de desarrollo integrado Arduino (IDE)"
+author: "qode66"
 description: "Presentamos el entorno de desarrollo integrado Arduino (IDE), el software que nos permite programar las placas Arduino y es necesario conocerlo para sacar todo el provecho de su potencia y características."
 date: 2021-06-23 13:15:00 +0200
 categories: arduino basic iniciacion
 excerpt: "Presentamos el entorno de desarrollo integrado Arduino (IDE), el software que nos permite programar las placas Arduino y es necesario conocerlo para sacar todo el provecho de su potencia y características."
 tags: ["arduino", "IDE", "entorno de desarrollo", "boceto", "sketch"]
 ---
-
-# El entorno de desarrollo integrado Arduino (IDE)
 
 [img01]: /assets/imatges/ard/ard-00-01.png "IDE Arduino"
 [img02]: /assets/imatges/ard/ard-00-02.png "Barra de herramientas"
@@ -25,7 +25,7 @@ El entorno de desarrollo integrado Arduino (IDE) contiene:
 
 Se conecta a las placas Arduino para cargar programas y comunicarse con ellos.
 
-![IDE Arduino][img01]
+![IDE Arduino][img01]{: .centered}
 
 ## Escribir bocetos (sketch)
 
@@ -39,7 +39,7 @@ Los botones de la barra de herramientas le permiten verificar y subir programas,
 
 ### Los botones de la barra de herramientas
 
-![Barra de herramientas][img02]
+![Barra de herramientas][img02]{: .centered}
 
 - **Verificar**. Comprueba el código por si hay errores antes de compilarlo.
 - **Subir**. Compila el código y lo sube a la placa configurada.
@@ -50,7 +50,7 @@ Los botones de la barra de herramientas le permiten verificar y subir programas,
 
 Se encuentran órdenes adicionales en los cinco menús: **Archivo, Editar, Programa, Herramientas, Ayuda**. Los menús son sensibles al contexto, lo que significa que solo están disponibles los elementos relevantes para el trabajo que se está realizando actualmente.
 
-![Barra de menú][img03]
+![Barra de menú][img03]{: .centered}
 
 ### Archivo
 
