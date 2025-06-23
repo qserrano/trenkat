@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "Nuestro primer programa"
 author: "qode66"
 description: "En esta lección aprenderemos a programar nuestro primer programa en Arduino."
@@ -57,7 +58,7 @@ que traduce lo que hemos escrito a instrucciones comprensibles para el
 procesador de nuestro Arduino. A este nuevo programa se le llama
 compilador.
 
-![Compilador][img1]
+![Compilador][img1]{: .centered}
 
 El compilador convierte nuestras instrucciones (código fuente) en
 instrucciones del procesador (código máquina).
@@ -121,7 +122,7 @@ rodea, Empezaremos por los pines digitales que pueden usarse como:
 - Entradas: Para leer información digital del mundo exterior.
 - Salidas: Para activar una señal al mundo exterior.
 
-![Entradas y salidas][img2]
+![Entradas y salidas][img2]{: .centered}
 
 Arduino dispone de 14 pines que pueden ser usados de esta manera,
 numerados del 0 al 13.
@@ -234,14 +235,14 @@ void loop()
 
 Solo nos falta ya, comprobar si hay errores y para ello pulsamos el icono en blanco:
 
-![Verifica][img3]
+![Verifica][img3]{: .centered}
 Si
 todo va bien, ( si no hay errores en rojo) podemos compilar y volcar con la
 siguiente flecha, En caso contrario ( y creedme que os pasará con
 frecuencia) habrá que revisar los posibles errores y corregirlos. Volveremos
 sobre esto en el futuro.
 
-![Sube][img4]
+![Sube][img4]{: .centered}
 
 La flecha en blanco volcará nuestro programa al Arduino y podremos
 comprobar que la luz del pin 13 parpadea con un retardo de un segundo
