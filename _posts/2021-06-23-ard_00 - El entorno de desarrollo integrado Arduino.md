@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "El entorno de desarrollo integrado Arduino (IDE)"
+title: "00 - El entorno de desarrollo integrado Arduino (IDE)"
 author: "qode66"
 description: "Presentamos el entorno de desarrollo integrado Arduino (IDE), el software que nos permite programar las placas Arduino y es necesario conocerlo para sacar todo el provecho de su potencia y características."
 date: 2021-06-23 13:15:00 +0200

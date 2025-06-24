@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Nuestro primer programa"
+title: "01 - Nuestro primer programa"
 author: "qode66"
 description: "En esta lección aprenderemos a programar nuestro primer programa en Arduino."
 date: 2021-06-23 14:45:00 +0200

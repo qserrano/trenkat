@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Las entradas digitales"
+title: "03 - Las entradas digitales"
 author: "qode66"
 description: "Conocer las entradas digitales y leer un pulsador. Presentar los valores booleanos y un operador: Negación."
 date: 2021-06-24 17:40:00 +0200

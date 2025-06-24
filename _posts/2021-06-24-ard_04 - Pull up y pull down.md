@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pull-up y pull-down"
+title: "04 - Pull-up y pull-down"
 author: "qode66"
 description: "Montaje pull-up y pull-down"
 date: 2021-06-24 18:00:00 +0200

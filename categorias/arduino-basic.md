@@ -1,21 +1,25 @@
 ---
 layout: default
-title: Arduino básico
+title: Arduino
 permalink: /categorias/arduino-basic/
-css: /assets/css/categories.css
 ---
+
+<link rel="stylesheet" href="{{ '/assets/css/categories.css' | relative_url }}">
+
 <div class="tutorial-container">
     <div class="tutorial-content">
-        <h1>Tutorial Arduino básico</h1>
-        <ol>
-            <li><a href="/2021/06/23/ard_00-el-entorno-de-desarrollo-integrado-arduino.html">El entorno de desarrollo de Arduino (IDE)</a></li>
-            <li><a href="/2021/06/23/ard_01-nuestro-primer-programa.html">Nuestro primer programa</a></li>
-            <li><a href="/2021/06/24/ard_02-nuestro-primer-circuito.html">Nuestro primer circuito</a></li>
-            <li><a href="/2021/06/24/ard_03-las-entradas-digitales.html">Las entradas digitales</a></li>
-            <li><a href="/2021/06/24/ard_04-pull-up-y-pull-down.html">Pull-up y pull-down</a></li>
-        </ol>
+            <h1>Tutorial de Arduino básico</h1>
+
+        {% assign sorted_posts = site.posts | sort: 'date' %}
+        {% for post in sorted_posts %}
+            {% if post.categories contains "arduino" and post.categories contains "basic" %}
+            <article class="articulo">
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </article>
+            {% endif %}
+        {% endfor %}
     </div>
     <div class="tutorial-image">
-        <img src="/assets/imatges/tutoriales/tutorial-arduino-basic.png" alt="Tutorial Arduino básico">
+            <img src="/assets/imatges/tutoriales/tutorial-arduino-basic.png" alt="Tutorial Arduino básico">
     </div>
 </div>

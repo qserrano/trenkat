@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Nuestro primer circuito"
+title: "02 - Nuestro primer circuito"
 author: "qode66"
 description: "Fijamos algunas ideas básicas sobre electrónica, montamos un circuito con LED y resistencia y comprender el esquema eléctrico, aprender cómo utilizar la protoboard e instalar el programa «Blinking LED»"
 date: 2021-06-24 00:45:00 +0200

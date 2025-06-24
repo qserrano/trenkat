@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Las entradas analógicas"
+title: "05 - Las entradas analógicas"
 author: "qode66"
 description: "Las entradas analógicas"
 date: 2021-06-24 23:30:00 +0200
