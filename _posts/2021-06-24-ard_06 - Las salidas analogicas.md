@@ -38,7 +38,7 @@ decir que pueden tomar un valor ALTO o BAJO, pero no valores intermedios.
 Si representamos el valor de una **señal digital** a lo largo del tiempo,
 veríamos algo así:
 
-![Señal digital][img1] {: .centered}
+![Señal digital][img1]{: .centered}
 
 En la vida muchas cosas son así, apruebas o suspens, enciendes la luz o
 la apagas, pero muchas otras son variables medibles continuas y pueden
@@ -49,7 +49,7 @@ valores intermedios como podamos imaginar.
 A esta clase de variables las llamamos **analógicas** y una
 representación por contraposición a lo **digital**, sería un poco como esto:
 
-![Señal analógica][img2] {: .centered}
+![Señal analógica][img2]{: .centered}
 
 No es raro que queramos controlar algo del mundo exterior con una
 señal analógica de manera que el comportamiento del sistema siga
@@ -81,7 +81,7 @@ digitales que varían de forma muy rápida de manera que el valor eficaz
 del señal de salida sea equivalente a un señal analógico de menor
 voltaje.
 
-![PWM][img3] {: .centered}
+![PWM][img3]{: .centered}
 
 Lo sorprendente es que el truco funciona.
 
@@ -115,7 +115,7 @@ Pero hay una restricción. No todos los pines digitales de Arduino aceptan
 poner valores PWM en la salida. Solamente aquellos que tienen un símbolo ~
 delante del número. Fijaos en la numeración de los pines de la imagen:
 
-![Pines con PWM][img4] {: .centered}
+![Pines con PWM][img4]{: .centered}
 
 - Solamente los pines 3, 5, 6, 9, 10 y 11 pueden hacer PWM y simular un valor analógico en su salida.
 - Si intentas hacer esto con un pin diferente, Arduino acepta la orden tranquilamente, sin error, pero para valores de 0 a 127 entiende que es _BAJO_ y para el resto pone _ALTO_ y sigue con su vida satisfecho con el deber cumplido.
@@ -126,7 +126,7 @@ Haremos el típico montaje de una resistencia y un diodo LED, similar al de
 la lección 2, pero asegurándonos de usar uno de los pines digitales que pueden
 dar señales PWM. En la imagen he usado el pin 9.
 
-![Montaje][img5] {: .centered}
+![Montaje][img5]{: .centered}
 
 Podemos escribir un programa similar a esto:
 
