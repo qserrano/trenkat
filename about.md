@@ -11,8 +11,12 @@ permalink: /about/
 
 # ¿Quién soy?
 
-**qode66** nace para romper esquemas en el mundo del desarrollo y la innovación tecnológica.
+¡Hola, gente! 👋 
 
-Creemos que el código es la materia prima con la que se crean futuros posibles, y que cada línea puede transformar la realidad.
+Si te flipa la tecnología, el Arduino o montar tus propios automatismos, ¡has llegado al sitio correcto! 
 
-Nuestra misión es facilitar la creación rápida, segura y flexible de prototipos digitales y soluciones tecnológicas, acompañando a creadores y startups para que conviertan sus ideas en proyectos reales.
+Soy Docente de la formación para el empleo especializado en electromecánica y neumática, Técnico superior en electricidad y domótica y, para qué engañarnos, un friki de las máquinas en general que adora trastear. 
+
+Aquí en **qode66** vas a encontrar tutoriales de Arduino y Scratch para que le pierdas el miedo, y te mostraré los proyectos más cacharros que se me ocurran.
+
+¿Te apuntas a cacharrear conmigo?
