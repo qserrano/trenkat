@@ -101,3 +101,35 @@ img.centered {
 main {
     padding-top: 2rem;
 }
+
+.home-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    animation: slideInFromRight 1.2s ease-out;
+}
+
+.home-title h1 {
+    font-size: 2rem;
+    font-weight: 200;
+    font-family: 'Roboto Condensed', 'Arial Narrow', 'Helvetica Condensed', sans-serif !important;
+    color: var(--text-primary);
+}
+
+/* Animación de entrada desde la derecha con rebote para .home-title */
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(-10%);
+        opacity: 1;
+    }
+    80% {
+        transform: translateX(5%);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
