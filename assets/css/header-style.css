@@ -80,13 +80,14 @@ h1.site-title {
 
 .site-title a {
     text-decoration: none;
-    color: inherit;
-    transition: color 0.3s ease;
+    color: var(--text-primary);
 }
 
 .site-title a:hover {
-    color: var(--accent-secondary);
     text-decoration: none;
+    color: var(--accent-primary);
+    text-shadow: 3px 3px 4px rgb(9, 0, 131);
+    transition: all 0.3s ease;
 }
 
 #cartrotech-link:hover {

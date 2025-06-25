@@ -3,7 +3,7 @@ layout: post
 title: "08 - Crear gráficas utilizando el puerto serie"
 author: "qode66"
 description: "Aprender a usar el Trazador Serie para hacer gráficas con el IDE de Arduino e incluir diversas variables en la gráfica."
-date: 2025-06-25 11:00:00 +0200
+date: 2021-06-25 11:00:00 +0200
 categories: arduino basic
 excerpt: "Aprender a usar el Trazador Serie para hacer gráficas con el IDE de Arduino e incluir diversas variables en la gráfica."
 tags: ["arduino", "gráficas", "puerto serie", "Trazador Serie"]

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Arduino
+title: Arduino básico
 permalink: /categorias/arduino-basic/
 ---
 
