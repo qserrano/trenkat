@@ -86,7 +86,7 @@ La librería necesaria para controlar la pantalla LCD se llama «LiquidCrystal»
 ```Arduino
 
 /******************************************
-  qode66 (www.qode66.com)
+  qode66 (www.qserrano.es)
   ARD_11.ino
   Tutorial ARduino - Lección 11: La pantalla LCD
   25.02.2021

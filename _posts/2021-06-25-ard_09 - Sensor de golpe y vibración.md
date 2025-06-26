@@ -48,7 +48,7 @@ El esquema electrónico es muy sencillo, como que tenemos una señal digital la 
 
 ```Arduino
 /******************************************
-  qode66 (www.qode66.com)
+  qode66 (www.qserrano.es)
   ARD_09.ino
   Tutorial ARduino - Lección 09: Sensor de golpe y de vibración
   25.02.2021
