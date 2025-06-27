@@ -4,7 +4,7 @@ title: "11 - La pantalla LCD"
 author: "qode66"
 description: "Presentar la pantalla LCD, su conexión y la programación."
 date: 2021-06-26 11:30:00 +0200
-categories: arduino display
+categories: arduino sensores display
 excerpt: "Presentar la pantalla LCD, su conexión y la programación."
 tags: ["arduino", "display", "LCD", "16x02"]
 ---

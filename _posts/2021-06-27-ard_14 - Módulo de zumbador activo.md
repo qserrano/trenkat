@@ -4,7 +4,7 @@ title: "14 - Módulo de zumbador activo"
 author: "qode66"
 description: "Aprender a utilizar el zumbador"
 date: 2021-06-27 15:20:00 +0200
-categories: arduino actuadores
+categories: arduino sensores actuadores
 excerpt: "Aprender a utilizar el zumbador"
 tags: ["arduino", "actuadores", "KY-012"]
 ---

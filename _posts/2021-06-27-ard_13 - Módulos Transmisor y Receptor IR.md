@@ -5,7 +5,7 @@ author: "qode66"
 description: "Cómo utilizar el módulo transmisor
 de infrarrojos y el receptor de infrarrojos."
 date: 2021-06-27 15:10:00 +0200
-categories: arduino actuadores
+categories: arduino sensores actuadores
 excerpt: "Cómo utilizar el módulo transmisor
 de infrarrojos y el receptor de infrarrojos."
 tags: ["arduino", "actuadores", "IR", "KY-005", "KY-022"]

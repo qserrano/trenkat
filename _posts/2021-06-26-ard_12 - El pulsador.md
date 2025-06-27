@@ -4,7 +4,7 @@ title: "12 - El módulo de pulsador"
 author: "qode66"
 description: "Cómo utilizar los pulsadores"
 date: 2021-06-26 11:45:00 +0200
-categories: arduino actuadores
+categories: arduino sensores actuadores
 excerpt: "Cómo utilizar los pulsadores"
 tags: ["arduino", "actuadores", "pulsador", "KY-004"]
 ---
