@@ -20,6 +20,6 @@ permalink: /categorias/arduino-leds/
         {% endfor %}
     </div>
     <div class="tutorial-image">
-            <img src="/assets/imatges/tutoriales/tutorial-arduino-leds.png" alt="Tutorial Arduino leds">
+            <img src="/assets/imatges/tutoriales/tutorial-arduino-leds.png" alt="Tutorial Arduino leds" width="300" height=auto>
     </div>
 </div>

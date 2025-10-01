@@ -20,6 +20,6 @@ permalink: /categorias/arduino-sensores/
         {% endfor %}
     </div>
     <div class="tutorial-image">
-            <img src="/assets/imatges/tutoriales/tutorial-arduino-sensores.png" alt="Tutorial Arduino sensores">
+            <img src="/assets/imatges/tutoriales/tutorial-arduino-sensores.png" alt="Tutorial Arduino sensores" width="300" height=auto>
     </div>
 </div>

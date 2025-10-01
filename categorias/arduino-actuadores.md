@@ -20,6 +20,6 @@ permalink: /categorias/arduino-actuadores/
         {% endfor %}
     </div>
     <div class="tutorial-image">
-            <img src="/assets/imatges/tutoriales/tutorial-arduino-actuadores.png" alt="Tutorial Arduino actuadores">
+            <img src="/assets/imatges/tutoriales/tutorial-arduino-actuadores.png" alt="Tutorial Arduino actuadores" width="300" height=auto>
     </div>
 </div>

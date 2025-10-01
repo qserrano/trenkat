@@ -20,6 +20,6 @@ permalink: /categorias/arduino-display/
         {% endfor %}
     </div>
     <div class="tutorial-image">
-            <img src="/assets/imatges/tutoriales/tutorial-arduino-display.png" alt="Tutorial Arduino display">
+            <img src="/assets/imatges/tutoriales/tutorial-arduino-display.png" alt="Tutorial Arduino display" width="300" height=auto>
     </div>
 </div>
