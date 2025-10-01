@@ -1,18 +1,18 @@
 ---
 layout: default
-title: Arduino sensores
-permalink: /categorias/arduino-sensores/
+title: Arduino leds
+permalink: /categorias/leds/
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/categories.css' | relative_url }}">
 
 <div class="tutorial-container">
     <div class="tutorial-content">
-            <h1>Tutorial de Arduino sensores</h1>
+            <h1>Tutorial de Arduino leds</h1>
 
         {% assign sorted_posts = site.posts | sort: 'date' %}
         {% for post in sorted_posts %}
-            {% if post.categories contains "arduino" and post.categories contains "sensores" %}
+            {% if post.categories contains "arduino" and post.categories contains "leds" %}
             <article class="articulo">
                 <a href="{{ post.url }}">{{ post.title }}</a>
             </article>
@@ -20,6 +20,6 @@ permalink: /categorias/arduino-sensores/
         {% endfor %}
     </div>
     <div class="tutorial-image">
-            <img src="/assets/imatges/tutoriales/tutorial-arduino-sensores.png" alt="Tutorial Arduino sensores" width="300" height=auto>
+            <img src="/assets/imatges/tutoriales/tutorial-arduino-leds.png" alt="Tutorial Arduino leds" width="300" height=auto>
     </div>
 </div>

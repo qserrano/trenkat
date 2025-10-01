@@ -1,18 +1,18 @@
 ---
 layout: default
-title: Arduino básico
-permalink: /categorias/arduino-basic/
+title: "Fundamentos de Neumatica"
+permalink: /categorias/fundamentos/
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/categories.css' | relative_url }}">
 
 <div class="tutorial-container">
     <div class="tutorial-content">
-            <h1>Tutorial de Arduino básico</h1>
+            <h1>Fundamentos de Neumatica</h1>
 
         {% assign sorted_posts = site.posts | sort: 'date' %}
         {% for post in sorted_posts %}
-            {% if post.categories contains "arduino" and post.categories contains "basic" %}
+            {% if post.categories contains "neumatica" and post.categories contains "fundamentos" %}
             <article class="articulo">
                 <a href="{{ post.url }}">{{ post.title }}</a>
             </article>
@@ -20,6 +20,6 @@ permalink: /categorias/arduino-basic/
         {% endfor %}
     </div>
     <div class="tutorial-image">
-            <img src="/assets/imatges/tutoriales/tutorial-arduino-basic.png" alt="Tutorial Arduino básico" width="300" height=auto>
+            <img src="/assets/imatges/categorias/neumatica-fundamentos.png" alt="Fundamentos de Neumatica" width="300" height=auto>
     </div>
 </div>

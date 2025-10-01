@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Arduino actuadores
-permalink: /categorias/arduino-actuadores/
+permalink: /categorias/actuadores/
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/categories.css' | relative_url }}">

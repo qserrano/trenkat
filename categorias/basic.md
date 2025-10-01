@@ -1,18 +1,18 @@
 ---
 layout: default
-title: Arduino leds
-permalink: /categorias/arduino-leds/
+title: Arduino básico
+permalink: /categorias/basic/
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/categories.css' | relative_url }}">
 
 <div class="tutorial-container">
     <div class="tutorial-content">
-            <h1>Tutorial de Arduino leds</h1>
+            <h1>Tutorial de Arduino básico</h1>
 
         {% assign sorted_posts = site.posts | sort: 'date' %}
         {% for post in sorted_posts %}
-            {% if post.categories contains "arduino" and post.categories contains "leds" %}
+            {% if post.categories contains "arduino" and post.categories contains "basic" %}
             <article class="articulo">
                 <a href="{{ post.url }}">{{ post.title }}</a>
             </article>
@@ -20,6 +20,6 @@ permalink: /categorias/arduino-leds/
         {% endfor %}
     </div>
     <div class="tutorial-image">
-            <img src="/assets/imatges/tutoriales/tutorial-arduino-leds.png" alt="Tutorial Arduino leds" width="300" height=auto>
+            <img src="/assets/imatges/tutoriales/tutorial-arduino-basic.png" alt="Tutorial Arduino básico" width="300" height=auto>
     </div>
 </div>
