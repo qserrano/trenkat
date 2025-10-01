@@ -12,14 +12,16 @@
 
     {% include header.html %}
 
-  <main class="page-content">
-    <article>
-      <h2>{{ page.title }}</h2>
-      <div class="page-content">
-        {{ content }}
-      </div>
-    </article>
-  </main>
+  <div class="container">
+    <main class="page-content">
+      <article>
+        <h2>{{ page.title }}</h2>
+        <div class="page-content">
+          {{ content }}
+        </div>
+      </article>
+    </main>
+  </div>
 
   <footer>
     <p>© {{ site.time | date: "%Y" }} Q. Serrano</p>

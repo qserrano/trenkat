@@ -1,15 +1,24 @@
 body {
     font-family: system-ui, sans-serif;
-    margin: 2rem auto;
-    max-width: 1000px;
+    margin: 0;
     line-height: 1.6;
-    padding: 0 1rem;
     background: var(--bg-primary);
     color: var(--text-primary);
     background-image: url('../imatges/logos/header-img.png');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center top;
+}
+
+/* Contenedor principal para el contenido */
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 code {
@@ -99,7 +108,7 @@ hr {
 }
 
 main {
-    padding-top: 2rem;
+    padding: 2rem 1rem;
 }
 
 .home-title {
