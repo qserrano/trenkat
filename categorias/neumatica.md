@@ -4,6 +4,8 @@ title: Neumatica
 permalink: /categorias/neumatica/
 ---
 
+<img class="centered" src="/assets/imatges/categorias/neumatica-blog.jpg" alt="Neumatica" width="300" height=auto>
+
 <div class="blog-container">
         <h1>Artículos de Neumatica</h1>
 
