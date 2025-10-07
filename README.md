@@ -1,41 +1,54 @@
-# Qode66
+# 🔧 Trenkat
 
-Qode66 es un espacio para desarrollar, compartir y mejorar proyectos tecnológicos con un enfoque creativo y educativo. Nace con la idea de crear herramientas, aplicaciones y recursos que hagan más accesible el aprendizaje de programación, electrónica y tecnología aplicada a problemas reales.
+> *Si està trencat, millor!*
 
-Este repositorio forma parte del ecosistema de proyectos abiertos de Qode66, donde podrás encontrar desde prototipos sencillos hasta desarrollos completos listos para usar o adaptar.
+Benvingut/da a **Trenkat**, un espai per aprendre, experimentar i compartir projectes de **tecnologia, enginy i creativitat**.  
+Aquí el que s’espatlla no és un problema — és una excusa per **entendre com funciona** i **fer-ho millor**.
 
-## 🚀 ¿Qué es Qode66?
+---
 
-Qode66 es más que código: es una iniciativa para aprender creando, experimentar con ideas, resolver problemas reales o imaginarios y fomentar la cultura del conocimiento compartido.
+## 💡 Què és Trenkat?
 
-- ✔️ Educación tecnológica
-- ✔️ Proyectos de programación
-- ✔️ Electrónica creativa
-- ✔️ Recursos para formadores
-- ✔️ Herramientas para makers
+**Trenkat** és un projecte amb esperit *maker* i finalitat **docent**.  
+Neix de la idea que la millor manera d’aprendre és **trencant, muntant i reconstruint**.
 
-## 📂 ¿Qué encontrarás aquí?
+En aquest espai trobaràs:
+- 🧠 Experiments amb **Arduino** i microcontroladors  
+- 💡 Projectes amb **Scratch** i programació educativa  
+- ⚙️ Mòduls de **pneumàtica**, **hidràulica** i **automatismes**  
+- 🔩 Recursos didàctics i activitats per a l’aula  
 
-Dependiendo del repositorio:
+Cada projecte està pensat per **aprendre fent** i per **gaudir del procés tant com del resultat**.
 
-- Proyectos con Arduino y microcontroladores
-- Aplicaciones web o APIs
-- Librerías o utilidades para programadores
-- Documentación técnica y guías didácticas
-- Recursos educativos listos para aplicar en el aula o talleres
+---
 
-## 🤝 ¿Quién puede participar?
+## ⚙️ Filosofia
 
-Qode66 es un proyecto abierto. Si te interesa contribuir, aprender o simplemente seguir el desarrollo, bienvenido/a.
+> “L’enginy neix del que es trenca.”
 
-- Fork del repositorio
-- Crea tu rama de desarrollo
-- Propón mejoras o corrige errores
-- Envía tu pull request
+A **Trenkat** creiem que equivocar-se és part essencial del procés.  
+Quan alguna cosa deixa de funcionar, apareix l’oportunitat d’**observar, comprendre i crear**.
 
-## 📬 Contacto
+El nostre lema és senzill:
+- 🔧 *Desmunta.*  
+- 🔍 *Entén.*  
+- 🚀 *Reconstrueix.*  
 
-Si quieres saber más o proponer colaboraciones:
+---
 
-- Email: [qode66@gmail.com]
-- Web (próximamente): qode66.com
+## 🌐 Connecta
+
+- 🌍 Web (aviat): [trenkat.cat](#)  
+- 🧰 Projectes i recursos: [github.com/trenkat](https://github.com/trenkat)  
+- 💬 Contacte o col·laboracions: *(propera integració)*  
+
+---
+
+## 📘 Llicència
+
+Aquest repositori és de codi obert.  
+Tot el contingut pot ser reutilitzat amb finalitats **educatives i no comercials**, sempre citant la font original.
+
+---
+
+✨ **Trenkat** — on res està del tot trencat.
