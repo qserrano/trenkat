@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Fundamentos de Neumatica"
+title: "Fundaments de Neumàtica"
 permalink: /categorias/fundamentos/
 ---
 
@@ -8,7 +8,7 @@ permalink: /categorias/fundamentos/
 
 <div class="tutorial-container">
     <div class="tutorial-content">
-            <h1>Fundamentos de Neumatica</h1>
+            <h1>Fundaments de Neumàtica</h1>
 
         {% assign sorted_posts = site.posts | sort: 'date' %}
         {% for post in sorted_posts %}
@@ -20,6 +20,6 @@ permalink: /categorias/fundamentos/
         {% endfor %}
     </div>
     <div class="tutorial-image">
-            <img src="/assets/imatges/categorias/neumatica-fundamentos.png" alt="Fundamentos de Neumatica" width="300" height=auto>
+            <img src="/assets/imatges/categorias/neumatica-fundamentos.png" alt="Fundaments de Neumàtica" width="300" height=auto>
     </div>
 </div>

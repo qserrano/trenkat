@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Arduino actuadores
+title: Arduino actuadors
 permalink: /categorias/actuadores/
 ---
 
@@ -8,7 +8,7 @@ permalink: /categorias/actuadores/
 
 <div class="tutorial-container">
     <div class="tutorial-content">
-            <h1>Tutorial de Arduino actuadores</h1>
+            <h1>Tutorial de Arduino actuadors</h1>
 
         {% assign sorted_posts = site.posts | sort: 'date' %}
         {% for post in sorted_posts %}
@@ -20,6 +20,6 @@ permalink: /categorias/actuadores/
         {% endfor %}
     </div>
     <div class="tutorial-image">
-            <img src="/assets/imatges/tutoriales/tutorial-arduino-actuadores.png" alt="Tutorial Arduino actuadores" width="300" height=auto>
+            <img src="/assets/imatges/tutoriales/tutorial-arduino-actuadores.png" alt="Tutorial Arduino actuadors" width="300" height=auto>
     </div>
 </div>

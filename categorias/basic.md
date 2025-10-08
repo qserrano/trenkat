@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Arduino básico
+title: Arduino bàsic
 permalink: /categorias/basic/
 ---
 
@@ -8,7 +8,7 @@ permalink: /categorias/basic/
 
 <div class="tutorial-container">
     <div class="tutorial-content">
-            <h1>Tutorial de Arduino básico</h1>
+            <h1>Tutorial de Arduino bàsic</h1>
 
         {% assign sorted_posts = site.posts | sort: 'date' %}
         {% for post in sorted_posts %}
@@ -20,6 +20,6 @@ permalink: /categorias/basic/
         {% endfor %}
     </div>
     <div class="tutorial-image">
-            <img src="/assets/imatges/tutoriales/tutorial-arduino-basic.png" alt="Tutorial Arduino básico" width="300" height=auto>
+            <img src="/assets/imatges/tutoriales/tutorial-arduino-basic.png" alt="Tutorial Arduino bàsic" width="300" height=auto>
     </div>
 </div>

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Arduino sensores
+title: Arduino sensors
 permalink: /categorias/sensores/
 ---
 
@@ -8,7 +8,7 @@ permalink: /categorias/sensores/
 
 <div class="tutorial-container">
     <div class="tutorial-content">
-            <h1>Tutorial de Arduino sensores</h1>
+            <h1>Tutorial de Arduino sensors</h1>
 
         {% assign sorted_posts = site.posts | sort: 'date' %}
         {% for post in sorted_posts %}
@@ -20,6 +20,6 @@ permalink: /categorias/sensores/
         {% endfor %}
     </div>
     <div class="tutorial-image">
-            <img src="/assets/imatges/tutoriales/tutorial-arduino-sensores.png" alt="Tutorial Arduino sensores" width="300" height=auto>
+            <img src="/assets/imatges/tutoriales/tutorial-arduino-sensores.png" alt="Tutorial Arduino sensors" width="300" height=auto>
     </div>
 </div>
