@@ -1,20 +1,20 @@
 ---
 layout: post
-title: "02 - Nuestro primer circuito"
+title: "02 - El nostre primer circuit"
 author: "qode66"
-description: "Fijamos algunas ideas básicas sobre electrónica, montamos un circuito con LED y resistencia y comprender el esquema eléctrico, aprender cómo utilizar la protoboard e instalar el programa «Blinking LED»"
+description: "Fixar algunes idees bàsiques sobre electrònica, muntar un circuit amb LED i resistència i comprendre l'esquema elèctric, aprendre com utilitzar la protoboard i instal·lar el programa «Blinking LED»"
 date: 2021-06-24 00:45:00 +0200
 categories: arduino basic
-excerpt: "Fijamos algunas ideas básicas sobre electrónica, montamos un circuito con LED y resistencia y comprender el esquema eléctrico, aprender cómo utilizar la protoboard e instalar el programa «Blinking LED»"
-tags: ["arduino", "LED", "resistencia", "protoboard", "esquema eléctrico"]
+excerpt: "Fixar algunes idees bàsiques sobre electrònica, muntar un circuit amb LED i resistència i comprendre l'esquema elèctric, aprendre com utilitzar la protoboard i instal·lar el programa «Blinking LED»"
+tags: ["arduino", "LED", "resistència", "protoboard", "esquema elèctric"]
 ---
 
-[img1]: /assets/imatges/ard/ard_02_01.png "Esquema eléctrico"
-[img2]: /assets/imatges/ard/ard_02_02.jpg "Esquema de montaje"
+[img1]: /assets/imatges/ard/ard_02_01.png "Esquema elèctric"
+[img2]: /assets/imatges/ard/ard_02_02.jpg "Esquema de muntatge"
 
 ## Objetivos
 
-El objetivo de esta sesión es fijar algunas ideas básicas sobre electrónica, montar un circuito con LED y resistencia y comprender el esquema eléctrico, aprender cómo utilizar la protoboard e instalar el programa «Blinking LED»
+El objectiu de aquesta sessió és fixar algunes idees bàsiques sobre electrònica, muntar un circuit amb LED i resistència i comprendre l'esquema elèctric, aprendre com utilitzar la protoboard i instal·lar el programa «Blinking LED»
 
 ## Material requerido
 
@@ -22,87 +22,87 @@ El objetivo de esta sesión es fijar algunas ideas básicas sobre electrónica, 
 | :--------------------------------------------------------------------: | :----------------------- |
 |   <img src="/assets/imatges/mat/mat_unor3.png" width="50" height="50">    | Arduino Uno o compatible |
 | <img src="/assets/imatges/mat/mat_protoboard.png" width="50" height="50"> | Una protoboard           |
-|   <img src="/assets/imatges/mat/mat_cables.png" width="50" height="50">   | Cables de conexión       |
-|    <img src="/assets/imatges/mat/mat_led.png" width="50" height="50">     | Un diodo led             |
-|  <img src="/assets/imatges/mat/mat_resis330.png" width="50" height="50">  | Una resistencia 330 Ohms |
+|   <img src="/assets/imatges/mat/mat_cables.png" width="50" height="50">   | Cables de conexió       |
+|    <img src="/assets/imatges/mat/mat_led.png" width="50" height="50">     | Un diode led             |
+|  <img src="/assets/imatges/mat/mat_resis330.png" width="50" height="50">  | Una resistència 330 Ohms |
 
-## Algunas ideas básicas sobre electrónica
+## Algunes idees bàsiques sobre electrònica
 
-Cuando dejamos fluir agua de un lugar alto a otro más bajo, el agua corre libremente mientras no se lo impedimos, y siempre de arriba abajo. Decimos que las diferentes alturas suponen una diferencia de potencial entre ambos puntos que puede ser transformada en trabajo útil.
+Quan deixem fluir aigua d'un lloc alt a un altre més baix, l'aigua corre lliurement mentre no li ho impedim, i sempre de dalt a baix. Diem que les diferents altures suposen una diferència de potencial entre tots dos punts que pot ser transformada en treball útil.
 
-Cuando existe una diferencia de tensión eléctrica (o diferencia de potencial) entre dos puntos con conexión, la electricidad fluye del positivo (o de más carga) hacia el negativo o menos, y también podemos obtener trabajo útil de este principio.
+Quan existeix una diferència de tensió elèctrica (o diferència de potencial) entre dos punts amb connexió, l'electricitat flueix del positiu (o de mes càrrega) cap al negatiu o menys, i també podem obtindre treball útil d'aquest principi.
 
-Aunque la física detrás de estos dos ejemplos es diferente, conceptualmente son bastante similares y por eso hablamos de:
+Encara que la física darrere d'aquests dos exemples és diferent, conceptualment són bastant semblants i per això parlem de:
 
-- Corriente de agua / Corriente eléctrica.
-- Caudal de agua / Intensidad de corriente.
-- Resistencia al flujo / Resistencia eléctrica.
-- Capacidad de una reserva de agua / Capacidad de un condensador.
+- Corrent d'aigua / Corrent elèctrica.
+- Cabal d'aigua / Intensitat de corrent.
+- Resistència al flux / Resistència elèctrica.
+- Capacitat d'una reserva d'aigua / Capacitat d'un condensador.
 
-La idea es que la corriente eléctrica fluye del positivo al negativo porque hay una diferencia de tensión (que medimos en Voltios de símbolo V) pero esto no es una medida absoluta sino la diferencia que hay entre los puntos en que lo medimos.
+La idea és que el corrent elèctric flueix del positiu al negatiu perquè hi ha una diferència de tensió (que mesurem en Volts de símbol V) però això no és una mesura absoluta sinó la diferència que hi ha entre els punts en què ho mesurem.
 
-- De la misma manera, la diferencia de altura entre dos puntos solo representa esto, una **_diferencia_** y no indica a qué altura se encuentran respecto a una referencia más o menos arbitraria.
+- De la mateixa manera, la diferència d'altura entre dos punts només representa això, una **_diferència_** i no indica a quina altura es troben respecte a una referència més o menys arbitrària.
 
-Hay componentes que se oponen a la libre circulación de la corriente. Los llamamos **resistencias**, su valor se mide en Ohms y su símbolo es Ω.
+Hi ha components que s'oposen a a la lliure circulació del corrent. Els diem **resistències** , el seu valor es mesura en Ohms i el seu símbol és Ω .
 
-La **ley de Ohm**, liga todos estos valores de una forma precisa: **V = R x I**
+La **llei d'Ohm**, lliga tots aquests valors d'una forma precisa: **V = R x I**
 
-Donde **V** es la tensión en voltios, **R** la resistencia e **I** la intensidad eléctrica que fluye.
+On **V** és la tensió en volts, **R** la resistència i **I** la intensitat elèctrica que flueix.
 
-- _En el mundo de Arduino la tensión es casi siempre 5V, que es la tensión a la que funciona y la que es capaz de poner en sus salidas digitales._
+- _En el món de Arduino la tensió és quasi sempre 5V, que és la tensió al fet que funciona i la que és capaç de posar en les seues eixides digitals._
 
-Otra manera de escribir esta ley de Ohm es **I = V / R**
+Una altra manera d'escriure aquesta llei d'Ohm és **I = V / R**
 
-Lo que implica que si la resistencia del circuito es nula (o casi, como en el caso de un cable de cobre) la intensidad de la corriente se dispara y puede llegar a fundir el cable o componente que encuentre.
+El que implica que si la resistència del circuit és nul·la (o quasi, com en el cas d'un cable de coure) la intensitat del corrent es dispara i pot arribar a fondre el cable o component que trobe.
 
-- _Esto se conoce como cortocircuito o corto simplemente y debe ser evitado decididamente ya que suele acabar con olor a quemado y algún susto, en el mejor caso._
+- _Això es coneix com a curtcircuit o curt simplement i ha de ser evitat decididament ja que sol acabar amb olor a cremat i algun esglai, en el millor cas._
 
-## Nuestro primer circuito electrónico
+## El nostre primer circuit electrònic
 
-En la sesión anterior programamos el LED conectado al pin 13 de nuestro Arduino. Hoy duplicaremos este circuito en el exterior montándolo desde el principio con componentes discretos. Su esquema eléctrico sería:
+En la sessió anterior programem el LED connectat al pin 13 del nostre Arduino. Hui duplicarem aquest circuit en l'exterior muntant-lo des del principi amb components discrets. El seu esquema elèctric seria:
 
-![Esquema eléctrico][img1]{: .centered}
+![Esquema elèctric][img1]{: .centered}
 
-Vemos a la izquierda el símbolo del **diodo LED** que es emisor de luz y por eso tiene esas flechas salientes para indicarlo (LED viene del inglés Light Emitting Diode, o diodo emisor de luz).
+Veiem a l'esquerra el símbol del **díode LED** que és emissor de llum i per això té aqueixes fletxes sortints per a indicar-ho (LED ve del anglés Light Emitting Diode, o díode emissor de llum).
 
-La resistencia se representa por ese segundo símbolo indicando un nombre R1 y su valor 330Ω.
+La resistència es representa per aqueix segon símbol indicant un nom R1 i el seu valor 330Ω.
 
-A su vez vemos a la izquierda las letras GND para indicar que es el negativo. Tiene muchos nombres: Masa, El símbolo --, Tierra (aunque no es lo mismo), Ground, Negativo, cátodo.
+Al seu torn veiem a l'esquerra les lletres GND per a indicar que és el negatiu. Té molts noms: Massa, El símbol --, Terra( encara que no és el mateix), Ground, Negatiu, càtode.
 
-Finalmente a la derecha el símbolo de +5V indica el extremo de tensión positiva o positivo y a veces se representa como Vcc. Las líneas rectas y negras indican conexión eléctrica mediante cables conductores.
+Finalment a la dreta el símbol de +5V indica l'extrem de tensió positiva o positiu i a vegades es representa com Vcc. Les línies rectes i negres indiquen connexió elèctrica mitjançant cables conductors.
 
-- _Un diodo, es un componente electrónico que solo permite pasar la corriente en una dirección. En la dirección del positivo al negativo (la parte ancha del triángulo) al negativo, la punta del triángulo (que indica la dirección)._
-- _Para indicar cuál de las patas de un diodo LED es el positivo, esta suele ser de mayor longitud._
-- _Si se conecta al revés, cortará el flujo de corriente muy eficazmente y no se iluminará en absoluto._
-- _Las resistencias en cambio no diferencian un extremo del otro, decimos que no tienen polaridad._
+- _Un díode, és un component electrònic que només permet passar el corrent en una adreça. En la direcció del positiu al negatiu (la part ampla del triangle) al negatiu, la punta del triangle (que indica la direcció)._
+- _Per a indicar quin de les potes d'un díode LED és el positiu, aquest sol ser de major longitud._
+- _Si es connecta al revés, tallarà el flux de corrent molt eficaçment i no s'il·luminarà en absolut._
+- _Les resistències en canvi no diferencien un extrems de l'altre, diem que no tenen polaritat._
 
-Es importante entender los esquemas electrónicos porque permiten comprender con rapidez cualquier circuito. Vale la pena dedicarle un poco de esfuerzo porque son el lenguaje de la electrónica.
+És important entendre els esquemes electrònics perquè permeten comprendre amb rapidesa qualsevol circuit. Val la pena dedicar-li una mica d'esforç perquè són el llenguatge de l'electrònica.
 
-Una vez comprendido el esquema eléctrico del circuito, veamos la conexión en la Protoboard:
+Una vegada comprés l'esquema elèctric del circuit, vegem la connexió en la Protoboard:
 
-![Esquema de montaje][img2]{: .centered}
+![Esquema de muntatge][img2]{: .centered}
 
-Este esquema sigue una pauta de marcar los cables que van _a positivo en rojo_ y los que van _a GND en negro_. _Recomendamos encarecidamente_ se siga esta norma en la práctica porque ayuda a identificar posibles problemas y evita errores.
+Aquest esquema segueix una pauta de marcar els cables que van _a positiu en roig_ i els que van _a GND en negre_. _Recomanem encaridament_ se seguisca aquesta norma en la pràctica perquè ajuda a identificar possibles problemes i evita errors.
 
-- _La Protoboard une los puntos de la línea azul entre sí y los de arriba de la línea roja entre sí, (se llaman raíles), pero no conecta el raíl rojo positivo con el raíl negro negativo._
-- _A su vez existen dos zonas de líneas verticales en la Protoboard. Estas líneas verticales están unidas entre sí internamente, para facilitar la conexión de los componentes, pero no se unen las líneas paralelas._
+- _La Protoboard uneix els punts de la línia blava entre si i els de damunt de la línia roja entre si, (se'n diu raïls), però no connecta el raïl roig positiu amb el raïl negre negatiu._
+- _Al seu torn existeixen dues zones de línies verticals en la Protoboard. Aquestes línies verticals estan unides entre si internament, per a facilitar la connexió dels components, però no s'uneixen les línies paral·leles._
 
-Las claves para montar el circuito con éxito, son:
+Les claus per a muntar el circuit amb èxit, són:
 
-- Conectamos el pin 13 de Arduino a la línea roja de la Protoboard: Positivo.
-- Conectamos el GND de Arduino a la línea azul de la Protoboard: Negativo.
-- Usamos el raíl positivo (los pins de la línea roja) para conectar a la resistencia.
-- El otro extremo de la resistencia se conecta al positivo del LED porque están en la misma vertical de la Protoboard (y esta los conecta eléctricamente).
-- _Nótese que el positivo del LED está claramente marcado como de mayor longitud mediante un pequeño ángulo cerca de la base_.
-- _Un diodo LED casi no presenta resistencia propia, por lo que siempre debe usarse una resistencia adicional que limite el paso de corriente, y evite que se queme. (Una resistencia entre 220 y 330 Ω suele ser adecuada)._
-- El circuito se cierra con un cable desde el negativo del LED al raíl de negativo.
-- Cuando nuestro programa ponga un valor de HIGH (5V) en el pin 13 permitirá el flujo de corriente por el circuito iluminando el LED. Con LOW simplemente el circuito estará apagado, sin tensión.
+- Connectem el pin 13 de Arduino a la línia roja de la Protoboard: Positiu.
+- Connectem el GND de Arduino a la línia blava de la Protoboard: Negatiu.
+- Usem el raïl positiu (els pins de la línia roja) per a connectar a la resistència.
+- L'altre extrem de la resistència es connecta al positiu del LED perquè estan en la mateixa vertical de la Protoboard (i aquesta els connecta elèctricament).
+- _Note's que el positiu del LED està clarament marcat com de major longitud mitjançant un xicotet angle prop de la base_.
+- _Un díode LED quasi no presenta resistència pròpia, per la qual cosa sempre ha d'usar-se una resistència addicional que limite el pas de corrent, i evite que es creme. (Una resistència entre 220 i 330 Ω sol ser adequada)._
+- El circuit es tanca amb un cable des del negatiu del LED al raïl de negatiu.
+- Quan el nostre programa pose un valor de HIGH (5V) en el pin 13 permetrà el flux de corrent pel circuit il·luminant el LED. Amb LOW senzillament el circuit estarà apagat, sense tensió.
 
-Podemos ahora volcar el programa que hicimos en la lección 1.02 (_O simplemente cargar el ejemplo Blink_), siguiendo el procedimiento que definimos allí, y veremos cómo esta vez, además del LED propio de Arduino, nuestro LED exterior parpadea siguiendo el mismo ciclo de encendido y apagado.
+Podem ara bolcar el programa que vam fer en la lliçó anterior (_O simplement carregar l'exemple Blink_), seguint el procediment que definim allí, i veurem com aquesta vegada, a més del LED propi de Arduino, el nostre LED exterior parpelleja seguint el mateix cicle d'encesa i apagat.
 
-## Resumen de la lección
+## Resum de la lliçó
 
-- Hemos visto algunos conceptos básicos de electrónica: la ley de Ohm, que relaciona la tensión la resistencia.
-- Hemos identificado dos componentes básicos en electrónica, resistencias y los diodos.
-- Hemos aprendido a descifrar los primeros esquemas electrónicos.
-- Hemos montado nuestro primer circuito con estos componentes.
+- Hem vist alguns conceptes bàsics d'electrònica: la llei d'Ohm, que relaciona la tensió la resistència.
+- Hem identificat dos components bàsics en electrònica, resistències i els díodes.
+- Hem aprés a desxifrar els primers esquemes electrònics.
+- Hem muntat el nostre primer circuit amb aquests components.
