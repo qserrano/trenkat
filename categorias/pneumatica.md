@@ -1,16 +1,16 @@
 ---
 layout: default
-title: Neumàtica
-permalink: /categorias/neumatica/
+title: Pneumàtica
+permalink: /categorias/pneumatica/
 ---
 
-<img class="centered" src="/assets/imatges/categorias/neumatica-blog.jpg" alt="Neumatica" width="300" height=auto>
+<img class="centered" src="/assets/imatges/categorias/neumatica-blog.jpg" alt="Pneumàtica" width="300" height=auto>
 
 <div class="blog-container">
-        <h1>Publicacions de Neumàtica</h1>
+        <h1>Publicacions de Pneumàtica</h1>
 
     {% for post in site.posts %}
-        {% if post.categories contains "neumatica" %}
+        {% if post.categories contains "pneumatica" %}
         <article class="articulo">
             <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
             <div class="fecha">
