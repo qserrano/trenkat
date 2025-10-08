@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "04 - Muntatge pull-up i pull-down"
-author: "qode66"
+author: "qserrano"
 description: "Pull-up i pull-down és un muntatge pel qual assegurem un valor alt o baix (HIGH o LOW) a la eixida del circuit"
 date: 2021-06-24 18:00:00 +0200
 categories: arduino basic

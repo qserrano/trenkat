@@ -1,16 +1,16 @@
 ---
 layout: post
 title: "01 - El nostre primer programa"
-author: "qode66"
+author: "qserrano"
 description: "En aquesta lliçó aprendrem a programar el nostre primer programa en Arduino."
 date: 2021-06-23 14:45:00 +0200
 categories: arduino basic
 excerpt: "En aquesta lliçó aprendrem a programar el nostre primer programa en Arduino."
-tags: ["arduino", "programació", "boceto", "sketch", "IDE"]
+tags: ["arduino", "programació", "bocet", "sketch", "IDE"]
 ---
 
 [img1]: /assets/imatges/ard/ard_01_01.jpg "Compilador"
-[img2]: /assets/imatges/ard/ard_01_02.png "Entradas y salidas"
+[img2]: /assets/imatges/ard/ard_01_02.png "Entrades i sortides"
 [img3]: /assets/imatges/ard/ard_01_03.png "Verifica"
 [img4]: /assets/imatges/ard/ard_01_04.png "Sube"
 

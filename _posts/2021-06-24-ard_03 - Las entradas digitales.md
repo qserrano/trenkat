@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "03 - Les entrades digitals"
-author: "qode66"
+author: "qserrano"
 description: "Conèixer les entrades digitals i aprofitarem per llegir un polsador. Presentarem els valors booleans i un operador: Negació"
 date: 2021-06-24 17:40:00 +0200
 categories: arduino basic
-excerpt: "Coneixer les entrades digitals i llegir un pulsador. Presentar els valors booleans i un operador: Negació."
-tags: ["arduino", "LED", "resistència", "protoboard", "esquema elèctric", "pulsador"]
+excerpt: "Coneixer les entrades digitals i llegir un polsador. Presentar els valors booleans i un operador: Negació."
+tags: ["arduino", "LED", "resistència", "protoboard", "esquema elèctric", "polsador"]
 ---
 
 [img1]: /assets/imatges/ard/ard_03_01.jpg "Esquema elèctric"

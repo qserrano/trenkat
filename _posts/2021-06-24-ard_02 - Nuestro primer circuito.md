@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "02 - El nostre primer circuit"
-author: "qode66"
+author: "qserrano"
 description: "Fixar algunes idees bàsiques sobre electrònica, muntar un circuit amb LED i resistència i comprendre l'esquema elèctric, aprendre com utilitzar la protoboard i instal·lar el programa «Blinking LED»"
 date: 2021-06-24 00:45:00 +0200
 categories: arduino basic
