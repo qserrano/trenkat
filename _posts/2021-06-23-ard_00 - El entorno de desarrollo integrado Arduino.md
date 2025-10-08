@@ -1,123 +1,123 @@
 ---
 layout: post
-title: "00 - El entorno de desarrollo integrado Arduino (IDE)"
-author: "qode66"
-description: "Presentamos el entorno de desarrollo integrado Arduino (IDE), el software que nos permite programar las placas Arduino y es necesario conocerlo para sacar todo el provecho de su potencia y características."
+title: "00 - L'entorn de desenvolupament integrat Arduino (IDE)"
+author: "qserrano"
+description: "Presentem l'entorn de desenvolupament integrat Arduino (IDE), el programari que ens permet programar les plaques Arduino i cal conèixer-lo per treure tot el profit de la seva potència i característiques."
 date: 2021-06-23 13:15:00 +0200
 categories: arduino basic
-excerpt: "Presentamos el entorno de desarrollo integrado Arduino (IDE), el software que nos permite programar las placas Arduino y es necesario conocerlo para sacar todo el provecho de su potencia y características."
-tags: ["arduino", "IDE", "entorno de desarrollo", "boceto", "sketch"]
+excerpt: "Presentem l'entorn de desenvolupament integrat Arduino (IDE), el programari que ens permet programar les plaques Arduino i cal conèixer-lo per treure tot el profit de la seva potència i característiques."
+tags: ["arduino", "IDE", "entorn de desenvolupament", "esborrany", "sketch"]
 ---
 
 [img01]: /assets/imatges/ard/ard-00-01.png "IDE Arduino"
-[img02]: /assets/imatges/ard/ard-00-02.png "Barra de herramientas"
+[img02]: /assets/imatges/ard/ard-00-02.png "Barra d'eines"
 [img03]: /assets/imatges/ard/ard-00-03.png "Barra de menú"
 
-Vamos a presentar el entorno de desarrollo integrado Arduino (IDE, nombre generado por su sigla en inglés). Es el software que nos permite programar las placas Arduino y es necesario conocerlo para sacar todo el provecho de su potencia y características.
+Presentarem l'entorn de desenvolupament integrat Arduino (IDE, nom generat per les seves sigles en anglès). És el programari que ens permet programar les plaques Arduino i cal conèixer-lo per treure tot el profit de la seva potència i característiques.
 
-El entorno de desarrollo integrado Arduino (IDE) contiene:
+L'entorn de desenvolupament integrat Arduino (IDE) conté:
 
-1. un editor de texto para escribir código,
-2. un área de mensajes,
-3. una consola de texto,
-4. una barra de herramientas con botones para funciones habituales
-5. una serie de menús.
+1. un editor de text per escriure codi,
+2. una àrea de missatges,
+3. una consola de text,
+4. una barra d'eines amb botons per a funcions habituals
+5. una sèrie de menús.
 
-Se conecta a las placas Arduino para cargar programas y comunicarse con ellos.
+Es connecta a les plaques Arduino per carregar programes i comunicar-s'hi.
 
 ![IDE Arduino][img01]{: .centered}
 
-## Escribir bocetos (sketch)
+## Escriure esborranys (sketch)
 
-Los programas escritos con el software Arduino (IDE) se denominan bocetos o «sketches». Estos bocetos se escriben en el editor de texto y se guardan con la extensión de archivo **.ino**. El editor tiene funciones para copiar/pegar y para buscar/reemplazar texto.
+Els programes escrits amb el programari Arduino (IDE) s'anomenen esborranys o «sketches». Aquests esborranys s'escriuen a l'editor de text i es guarden amb l'extensió de fitxer **.ino**. L'editor té funcions per copiar/enganxar i per cercar/substituir text.
 
-El área de mensajes proporciona comentarios mientras se guarda y se exporta y también muestra errores. La consola muestra la salida de texto del software Arduino (IDE), incluidos mensajes de error completos y otra información.
+L'àrea de missatges proporciona comentaris mentre es desa i s'exporta i també mostra errors. La consola mostra la sortida de text del programari Arduino (IDE), inclosos missatges d'error complets i altra informació.
 
-En el extremo inferior derecho de la ventana se muestra la placa configurada y el puerto serie.
+A l'extrem inferior dret de la finestra es mostra la placa configurada i el port sèrie.
 
-Los botones de la barra de herramientas le permiten verificar y subir programas, crear, abrir y guardar bocetos y abrir el monitor serie.
+Els botons de la barra d'eines permeten verificar i pujar programes, crear, obrir i desar esborranys i obrir el monitor sèrie.
 
-### Los botones de la barra de herramientas
+### Els botons de la barra d'eines
 
 ![Barra de herramientas][img02]{: .centered}
 
-- **Verificar**. Comprueba el código por si hay errores antes de compilarlo.
-- **Subir**. Compila el código y lo sube a la placa configurada.
-- **Nuevo**. Crea un boceto nuevo.
-- **Abrir**. Presenta un menú con todos los bocetos del sketchbook. Si hace clic en uno, se abrirá en una nueva ventana.
-- **Guardar**. Guarda su boceto.
-- **Monitor Serie**. Abre el monitor serie.
+- **Verificar**. Comprova el codi per si hi ha errors abans de compilar-lo.
+- **Pujar**. Compila el codi i el puja a la placa configurada.
+- **Nou**. Crea un esborrany nou.
+- **Obrir**. Mostra un menú amb tots els esborranys de l'sketchbook. Si feu clic en un, s'obrirà en una finestra nova.
+- **Desar**. Desa el vostre esborrany.
+- **Monitor sèrie**. Obre el monitor sèrie.
 
-Se encuentran órdenes adicionales en los cinco menús: **Archivo, Editar, Programa, Herramientas, Ayuda**. Los menús son sensibles al contexto, lo que significa que solo están disponibles los elementos relevantes para el trabajo que se está realizando actualmente.
+Hi ha ordres addicionals als cinc menús: **Fitxer, Editar, Programa, Eines, Ajuda**. Els menús són sensibles al context, cosa que significa que només estan disponibles els elements rellevants per a la feina que s'està fent actualment.
 
 ![Barra de menú][img03]{: .centered}
 
-### Archivo
+### Fitxer
 
-- **Nuevo.** Abre una nueva ventana del editor, con la estructura mínima de un boceto ya instalada.
-- **Abrir.** Permite cargar un archivo de boceto navegando por las unidades y carpetas del ordenador.
-- **Abrir Recientes.** Ofrece una lista breve de los bocetos más recientes, listos para abrirse.
-- **Sketchbook.** Muestra los bocetos actuales dentro de la estructura del Sketchbook; al hacer clic en cualquier nombre se abrirá el boceto correspondiente en una nueva ventana del editor.
-- **Ejemplos.** Cualquier ejemplo proporcionado por el software Arduino (IDE) o la biblioteca aparece en este elemento del menú. Todos los ejemplos se estructuran en un árbol que permite un fácil acceso por tema o biblioteca.
-- **Cerrar.** Cierra la ventana del software Arduino desde el que se hace clic.
-- **Guardar.** Guarda el boceto con el nombre actual. Si el archivo no se ha nombrado antes, se proporcionará un nombre en la ventana "Guardar como...".
-- **Guardar como...** Permite guardar el boceto actual con un nombre diferente.
-- **Configurar Página.** Muestra la ventana de configuración de la página para imprimir.
-- **Imprimir.** Envía el boceto actual a la impresora según los parámetros definidos en Configurar Página.
-- **Preferencias.** Abre la ventana Preferencias, donde se pueden personalizar algunos parámetros del IDE, como el idioma de la interfaz del IDE.
-- **Salir.** Cierra todas las ventanas del IDE. Los mismos bocetos abiertos cuando se eligió _Salir_ se volverán a abrir automáticamente la próxima vez que inicie el IDE.
+- **Nou.** Obre una finestra nova de l'editor, amb l'estructura mínima d'un esborrany ja instal·lada.
+- **Obrir.** Permet carregar un fitxer d'esborrany navegant per les unitats i carpetes de l'ordinador.
+- **Obrir recents.** Ofereix una llista breu dels esborranys més recents, a punt per obrir-se.
+- **Sketchbook.** Mostra els esborranys actuals dins de l'estructura de l'Sketchbook; en fer clic en qualsevol nom s'obrirà l'esborrany corresponent en una finestra nova de l'editor.
+- **Exemples.** Qualsevol exemple proporcionat pel programari Arduino (IDE) o la biblioteca apareix en aquest element del menú. Tots els exemples s'estructuren en un arbre que permet un accés fàcil per tema o biblioteca.
+- **Tancar.** Tanca la finestra del programari Arduino des de la qual es fa clic.
+- **Desar.** Desa l'esborrany amb el nom actual. Si el fitxer no s'ha anomenat abans, es proporcionarà un nom a la finestra "Desa com...".
+- **Desa com...** Permet desar l'esborrany actual amb un nom diferent.
+- **Configurar pàgina.** Mostra la finestra de configuració de la pàgina per imprimir.
+- **Imprimir.** Envia l'esborrany actual a la impressora segons els paràmetres definits a Configurar pàgina.
+- **Preferències.** Obre la finestra Preferències, on es poden personalitzar alguns paràmetres de l'IDE, com l'idioma de la interfície de l'IDE.
+- **Sortir.** Tanca totes les finestres de l'IDE. Els mateixos esborranys oberts quan es va triar _Sortir_ es tornaran a obrir automàticament la pròxima vegada que inicieu l'IDE.
 
 ### Editar
 
-- **Deshacer / Rehacer.** Retrocede uno o más pasos que ha hecho mientras edita; cuando retrocede, puede avanzar con Rehacer.
-- **Cortar.** Elimina el texto seleccionado del editor y lo coloca en el portapapeles.
-- **Copiar.** Duplica el texto seleccionado en el editor y lo coloca en el portapapeles.
-- **Copiar para el foro.** Copia el código de su boceto al portapapeles en un formato adecuado para publicarlo en el foro, con color de sintaxis.
-- **Copiar como HTML.** Copia el código de su boceto al portapapeles como HTML, adecuado para insertarlo en páginas web.
-- **Pegar.** Pone el contenido del portapapeles en la posición del cursor, en el editor.
-- **Seleccionar todo.** Selecciona y resalta todo el contenido del editor.
-- **Ir a la línea...** Pide y posiciona el cursor en la línea indicada.
-- **Comentar/Descomentar.** Pone o suprime el marcador de comentarios **//** al comienzo de cada línea seleccionada.
-- **Aumentar / Disminuir sangría.** Añade o resta un espacio al principio de cada línea seleccionada, moviendo el texto un espacio a la derecha o eliminando un espacio al principio.
-- **Aumentar / Reducir tamaño de fuente.** Hace más grande / pequeña la mida de la letra del boceto.
-- **Buscar.** Abre la ventana _Buscar y reemplazar_ donde puede especificar texto para buscar dentro del boceto actual según varias opciones.
-- **Buscar siguiente.** Destaca la siguiente ocurrencia (si la hay) de la cadena especificada como elemento de búsqueda en la ventana _Buscar_, en relación con la posición del cursor.
-- **Buscar anterior.** Destaca la ocurrencia anterior (si la hay) de la cadena especificada como elemento de búsqueda en la ventana _Buscar_ en relación con la posición del cursor.
+- **Desfer / Refer.** Retrocede un o més passos que heu fet mentre editeu; quan retrocediu, podeu avançar amb Refer.
+- **Tallar.** Elimina el text seleccionat de l'editor i el col·loca al porta-retalls.
+- **Copiar.** Duplica el text seleccionat a l'editor i el col·loca al porta-retalls.
+- **Copiar per al fòrum.** Copia el codi del vostre esborrany al porta-retalls en un format adequat per publicar-lo al fòrum, amb color de sintaxi.
+- **Copiar com a HTML.** Copia el codi del vostre esborrany al porta-retalls com a HTML, adequat per inserir-lo en pàgines web.
+- **Enganxar.** Posa el contingut del porta-retalls a la posició del cursor, a l'editor.
+- **Seleccionar tot.** Selecciona i ressalta tot el contingut de l'editor.
+- **Anar a la línia...** Demana i posiciona el cursor a la línia indicada.
+- **Comentar/Descomentar.** Posa o suprimeix el marcador de comentaris **//** al començament de cada línia seleccionada.
+- **Augmentar / Disminuir sagnat.** Afegeix o resta un espai al principi de cada línia seleccionada, movent el text un espai a la dreta o eliminant un espai al principi.
+- **Augmentar / Reduir mida de la lletra.** Fa més gran / més petita la mida de la lletra de l'esborrany.
+- **Cercar.** Obre la finestra _Cercar i substituir_ on podeu especificar text per cercar dins l'esborrany actual segons diverses opcions.
+- **Cercar següent.** Destaca la següent ocurrència (si n'hi ha) de la cadena especificada com a element de cerca a la finestra _Cercar_, en relació amb la posició del cursor.
+- **Cercar anterior.** Destaca l'ocurrència anterior (si n'hi ha) de la cadena especificada com a element de cerca a la finestra _Cercar_ en relació amb la posició del cursor.
 
 ### Programa
 
-- **Verificar / Compilar.** Comprueba su boceto buscando errores al compilarlo; informará del uso de memoria para el código y las variables en el área de la consola.
-- **Subir.** Compila y carga el fichero binario a la placa configurada a través del puerto configurado.
-- **Subir usando Programador.** Esto sobrescribirá el gestor de arranque en la placa; tendrá que utilizar _Herramientas > Grabar bootloader_ para restaurarlo y poder volver a cargar en el puerto serie USB. Sin embargo, le permite utilizar toda la capacidad de la memoria Flash para su boceto. Tenga en cuenta que esta orden NO quemará los fusibles. Para hacerlo, se debe ejecutar una orden _Herramientas > Grabar bootloader_.
-- **Exportar binario compilado.** Guarda un archivo **.hex** que se puede conservar como archivo o enviarlo a la placa mediante otras herramientas.
-- **Mostrar la carpeta del Sketch.** Abre la carpeta de bocetos actual.
-- **Incluir Librería.** Añade una librería a su boceto insertando declaraciones _#include_ al comienzo del código. Además, desde este elemento de menú puede acceder al gestor de librerías e importar librerías nuevas desde archivos **.zip**.
-- **Añadir fichero...** Añade un fichero fuente al boceto (se copiará desde su ubicación actual). El fichero nuevo aparece en una nueva pestaña en la ventana de boceto. Los ficheros se pueden borrar del boceto mediante el menú de pestañas accesible haciendo clic en el icono de triángulo pequeño que hay debajo del monitor serie en el lado derecho de la barra de herramientas.
+- **Verificar / Compilar.** Comprova el vostre esborrany cercant errors en compilar-lo; informarà de l'ús de memòria per al codi i les variables a l'àrea de la consola.
+- **Pujar.** Compila i carrega el fitxer binari a la placa configurada a través del port configurat.
+- **Pujar amb programador.** Això sobreescriurà el gestor d'arrencada a la placa; haureu d'utilitzar _Eines > Gravar bootloader_ per restaurar-lo i poder tornar a carregar pel port sèrie USB. Tot i això, us permet utilitzar tota la capacitat de la memòria Flash per al vostre esborrany. Tingueu en compte que aquesta ordre NO cremarà els fusibles. Per fer-ho, s'ha d'executar una ordre _Eines > Gravar bootloader_.
+- **Exportar binari compilat.** Desa un fitxer **.hex** que es pot conservar com a fitxer o enviar-lo a la placa mitjançant altres eines.
+- **Mostrar la carpeta de l'sketch.** Obre la carpeta d'esborranys actual.
+- **Incloure biblioteca.** Afegeix una biblioteca al vostre esborrany inserint declaracions _#include_ al començament del codi. A més, des d'aquest element de menú podeu accedir al gestor de biblioteques i importar biblioteques noves des d'arxius **.zip**.
+- **Afegir fitxer...** Afegeix un fitxer font a l'esborrany (es copiarà des de la seva ubicació actual). El fitxer nou apareix en una pestanya nova a la finestra de l'esborrany. Els fitxers es poden suprimir de l'esborrany mitjançant el menú de pestanyes accessible fent clic a la icona de petit triangle que hi ha sota el monitor sèrie al costat dret de la barra d'eines.
 
-### Herramientas
+### Eines
 
-- **Autoformato.** Esto formatea muy bien su código: es decir, sangrarlo de manera que la apertura y el cierre de las llaves se alineen y que las declaraciones dentro de las llaves queden más indentadas.
-- **Archivar Sketch.** Archiva una copia del boceto actual en formato .**zip**. El archivo se coloca en el mismo directorio que el boceto.
-- **Arreglar codificación y recargar.** Corrige posibles discrepancias entre la codificación de mapas de caracteres del editor y otros mapas de sistemas operativos.
-- **Monitor Serie.** Abre la ventana del monitor serie e inicia el intercambio de datos con cualquier placa conectada al puerto seleccionado actualmente. Normalmente, se reinicia la placa, si la placa admite _Reinicio por apertura del puerto serie._
-- **Serial Plotter.** Aplicación que nos permite dibujar gráficas.
-- **Placa:** Seleccione la placa que utiliza.
-- **Puerto.** Este menú contiene todos los dispositivos en serie (reales o virtuales) de su equipo. Se actualizará automáticamente cada vez que abra el menú de herramientas.
-- **Información de la placa.** Da información de la placa conectada.
-- **Programador.** Para seleccionar un programador de placa cuando se programa una placa o un chip y no se utiliza la conexión serie USB integrada. Normalmente no necesitará esto.
-- **Grabar Bootloader.** Los elementos de este menú le permiten grabar un gestor de arranque en el microcontrolador de una placa Arduino. Esto no es necesario para el uso normal de una placa Arduino o Genuino, pero es útil si adquiere un microcontrolador ATmega nuevo (que normalmente no incluye un gestor de arranque). Asegúrese de que ha seleccionado la placa correcta en el menú Placa antes de grabar el gestor de arranque en la placa de destino. Esta orden también establece los fusibles adecuados.
+- **Autoformat.** Això formata molt bé el vostre codi: és a dir, el fa sagnar de manera que l'obertura i el tancament de les claus s'alineïn i que les declaracions dins de les claus quedin més sagnades.
+- **Arxivar sketch.** Arxiva una còpia de l'esborrany actual en format .**zip**. L'arxiu es col·loca al mateix directori que l'esborrany.
+- **Arreglar codificació i recarregar.** Corregeix possibles discrepàncies entre la codificació de mapes de caràcters de l'editor i altres mapes de sistemes operatius.
+- **Monitor sèrie.** Obre la finestra del monitor sèrie i inicia l'intercanvi de dades amb qualsevol placa connectada al port seleccionat actualment. Normalment, es reinicia la placa, si la placa admet _Reinici per obertura del port sèrie._
+- **Serial Plotter.** Aplicació que ens permet dibuixar gràfiques.
+- **Placa:** Seleccioneu la placa que utilitzeu.
+- **Port.** Aquest menú conté tots els dispositius en sèrie (reals o virtuals) del vostre equip. S'actualitzarà automàticament cada vegada que obriu el menú d'eines.
+- **Informació de la placa.** Dóna informació de la placa connectada.
+- **Programador.** Per seleccionar un programador de placa quan es programa una placa o un xip i no s'utilitza la connexió sèrie USB integrada. Normalment no necessitareu això.
+- **Gravar bootloader.** Els elements d'aquest menú us permeten gravar un gestor d'arrencada al microcontrolador d'una placa Arduino. Això no és necessari per a l'ús normal d'una placa Arduino o Genuino, però és útil si adquiriu un microcontrolador ATmega nou (que normalment no inclou un gestor d'arrencada). Assegureu-vos que heu seleccionat la placa correcta al menú Placa abans de gravar el gestor d'arrencada a la placa de destinació. Aquesta ordre també estableix els fusibles adequats.
 
-### Ayuda
+### Ajuda
 
-Aquí encontrará fácil acceso a varios documentos que incluyen el
-software Arduino (IDE). Tiene acceso a Introducción, Referencia, una
-guía del IDE y otros documentos localmente, sin conexión a Internet.
-Los documentos son una copia local de los documentos en línea y pueden
-enlazar a nuestro sitio web en línea.
+Aquí hi trobareu accés fàcil a diversos documents que inclouen el
+programari Arduino (IDE). Teniu accés a Introducció, Referència, una
+guia de l'IDE i altres documents localment, sense connexió a Internet.
+Els documents són una còpia local dels documents en línia i poden
+enllaçar al nostre lloc web en línia.
 
-**Buscar en la referencia.** Esta es la única función interactiva del
-menú Ayuda: selecciona directamente la página pertinente en la copia local
-de la referencia para la función o la orden que hay bajo el cursor.
+**Cercar a la referència.** Aquesta és l'única funció interactiva del
+menú Ajuda: selecciona directament la pàgina pertinent a la còpia local
+de la referència per a la funció o l'ordre que hi ha sota el cursor.
 
-Esperamos que esta guía te haya proporcionado una base sólida para comprender el IDE de Arduino. Ahora que estás familiarizado con las herramientas y menús principales, te animamos a que explores por tu cuenta, pruebes los ejemplos incluidos y comiences a escribir tus propios sketches. La experimentación es clave para dominar cualquier herramienta, ¡así que no temas equivocarte y aprender sobre la marcha!
+Esperem que aquesta guia t'hagi proporcionat una base sòlida per comprendre l'IDE d'Arduino. Ara que estàs familiaritzat amb les eines i els menús principals, t'animem que exploris pel teu compte, provis els exemples inclosos i comencis a escriure els teus propis sketches. L'experimentació és clau per dominar qualsevol eina, així que no tinguis por d'equivocar-te i aprendre sobre la marxa!
 

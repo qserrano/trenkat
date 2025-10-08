@@ -1,11 +1,10 @@
 ---
 layout: default
-title: Inicio
+title: Inici
 paginate: 5
 ---
 <div class="home-title">
-    <h1>De la idea al automatismo funcional:</h1>
-    <h1>tu puerta de entrada al mundo 'maker' está abierta.</h1>
+    <h1>El taller digital dels curiosos</h1>
 
 </div>
 
@@ -14,7 +13,7 @@ paginate: 5
 </div>
 
 <h1>Blog</h1>
-<p>Todos los artículos publicados</p>
+<p>Totes les publicacions</p>
 <div class="home">
   <section class="posts-list">
       {% for post in paginator.posts %}
@@ -31,7 +30,7 @@ paginate: 5
           <div class="post-excerpt">
               {{ post.excerpt }}
           </div>
-          <a href="{{ post.url | relative_url }}" class="read-more">Leer más →</a>
+          <a href="{{ post.url | relative_url }}" class="read-more">Llegir més →</a>
       </article>
 
       {% endfor %}

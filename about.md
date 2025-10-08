@@ -9,14 +9,14 @@ permalink: /about/
 <div class="about-image">
 </div>
 
-# ¿Quién soy?
+# Qui sóc?
 
-¡Hola, gente! 👋 
+Hola, gent! 👋 
 
-Si te flipa la tecnología, el Arduino o montar tus propios automatismos, ¡has llegado al sitio correcto! 
+Si et flipa la tecnologia, l'Arduino o muntar els teus propis automatismes, has arribat al lloc correcte! 
 
-Soy Docente de la formación para el empleo especializado en electromecánica y neumática, Técnico superior en electricidad y domótica y, para qué engañarnos, un friki de las máquinas en general que adora trastear. 
+Sóc Docent de la formació per a l'ocupació especialitzat en electromecànica i pneumàtica, Tècnic superior en electricitat i domòtica i, per a què enganyar-nos, un friki de les màquines en general que adora trastejar. 
 
-Aquí en **qode66** vas a encontrar tutoriales de Arduino y Scratch para que le pierdas el miedo, y te mostraré los proyectos más cacharros que se me ocurran.
+Aquí a **trenkat** trobaràs tutorials d'Arduino i Scratch perquè li perdis la por, i et mostraré els projectes més esbojarrats que se m'ocorren.
 
-¿Te apuntas a cacharrear conmigo?
+T'apuntes a trastejar amb mi?

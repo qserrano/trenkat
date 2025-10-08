@@ -1,33 +1,33 @@
 :root {
   /* Tema claro */
   /* Colores de fondo */
-  --bg-primary: #FFFFFF;
-  --bg-secondary: #CCCCCC;
+  --bg-primary: #bbd6da;
+  --bg-secondary: #FFFFFF;
   
   /* Colores de texto */
-  --text-primary: #2C2C2C;
-  --text-secondary: #2C2C2C;
+  --text-primary: #000910;
+  --text-secondary: #000000;
   
   /* Colores de acento */
-  --accent-primary: #007BFF;    /* Azul eléctrico - color principal */
-  --accent-secondary: #A6FF00;  /* Verde lima neón - detalles y acentos */
-  --accent-tertiary: #FF6B35;   /* Naranja vibrante - tercer acento */
+  --accent-primary: #066D95;    /* Azul eléctrico - color principal */
+  --accent-secondary: #F5850E;  /* Verde lima neón - detalles y acentos */
+  --accent-tertiary: #33CCEB;   /* Naranja vibrante - tercer acento */
 }
 
 [data-theme="dark"] {
   /* Tema oscuro */
   /* Colores de fondo */
-  --bg-primary: #000000;        /* Fondo casi negro */
-  --bg-secondary: #1A1A1A;      /* Gris muy oscuro para el tema oscuro */
+  --bg-primary: #000910; 
+  --bg-secondary: #000000;
   
   /* Colores de texto */
-  --text-primary: #FFFFFF;
-  --text-secondary: #CCCCCC;
+  --text-primary: #bbd6da;
+  --text-secondary: #FFFFFF;
   
   /* Los acentos se mantienen para consistencia de marca */
-  --accent-primary: #007BFF;
-  --accent-secondary: #A6FF00;
-  --accent-tertiary: #FF6B35;
+  --accent-primary: #066D95;
+  --accent-secondary: #F5850E;
+  --accent-tertiary: #33CCEB;
 }
 
 /* Aseguramos transiciones suaves entre temas */
