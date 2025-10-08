@@ -2,15 +2,15 @@
 layout: post
 title: "03 - Les entrades digitals"
 author: "qode66"
-description: "Conocer las entradas digitales y leer un pulsador. Presentar los valores booleanos y un operador: Negación."
+description: "Conèixer les entrades digitals i aprofitarem per llegir un polsador. Presentarem els valors booleans i un operador: Negació"
 date: 2021-06-24 17:40:00 +0200
 categories: arduino basic
-excerpt: "Coneixer les entrades digitals i llegir un pulsador. Presentar els valors booleanos i un operador: Negació."
+excerpt: "Coneixer les entrades digitals i llegir un pulsador. Presentar els valors booleans i un operador: Negació."
 tags: ["arduino", "LED", "resistència", "protoboard", "esquema elèctric", "pulsador"]
 ---
 
-[img1]: /assets/imatges/ard/ard_03_01.jpg "Esquema eléctrico"
-[img2]: /assets/imatges/ard/ard_03_02.jpg "Montaje"
+[img1]: /assets/imatges/ard/ard_03_01.jpg "Esquema elèctric"
+[img2]: /assets/imatges/ard/ard_03_02.jpg "Muntatge"
 
 ## Objectius
 
@@ -25,7 +25,7 @@ La finalitat de la lliçó és conèixer les entrades digitals i aprofitarem per
 |   <img src="/assets/imatges/mat/mat_cables.png" width="50" height="50">   | Cables de connexió       |
 |    <img src="/assets/imatges/mat/mat_led.png" width="50" height="50">     | Un diode led             |
 |  <img src="/assets/imatges/mat/mat_resis330.png" width="50" height="50">  | 2x resistència 330 Ohms  |
-|  <img src="/assets/imatges/mat/mat_polsador.png" width="50" height="50">  | Un pulsador              |
+|  <img src="/assets/imatges/mat/mat_polsador.png" width="50" height="50">  | Un polsador              |
 
 ## Entrades digitals
 

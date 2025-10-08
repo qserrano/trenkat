@@ -1,33 +1,33 @@
 ---
 layout: post
-title: "04 - Pull-up y pull-down"
+title: "04 - Muntatge pull-up i pull-down"
 author: "qode66"
-description: "Montaje pull-up y pull-down"
+description: "Pull-up i pull-down és un muntatge pel qual assegurem un valor alt o baix (HIGH o LOW) a la eixida del circuit"
 date: 2021-06-24 18:00:00 +0200
 categories: arduino basic
-excerpt: "Montaje pull-up y pull-down"
-tags: ["arduino", "pull-up", "pull-down", "resistencia", "protoboard", "esquema eléctrico", "pulsador"]
+excerpt: "Pull-up i pull-down és un muntatge pel qual assegurem un valor alt o baix (HIGH o LOW) a la eixida del circuit"
+tags: ["arduino", "pull-up", "pull-down", "resistència", "protoboard", "esquema elèctric", "polsador"]
 ---
 
 [img1]: /assets/imatges/ard/ard_04_01.png "Pull-up"
 [img2]: /assets/imatges/ard/ard_04_02.png "Pull-down"
 
-Pull-up y pull-down es un montaje mediante el cual aseguramos un valor alto o bajo (HIGH o LOW) en la salida del circuito. Se utiliza necesariamente con los interruptores y contactos para no dejar nunca una entrada sin conectar a ningún lugar.
+Pull-up i pull-down és un muntatge pel qual assegurem un valor alt o baix (HIGH o LOW) a la eixida del circuit. S'utilitza necessàriament amb els interruptors i contactes per no deixar mai una entrada sense connectar a cap lloc.
 
 ## Pull-up
 
-![Pull-up][img1] {: .centered}
+![Pull-up][img1]
 
-Las resistencias pull-up son resistencias que se utilizan en circuitos lógicos para garantizar un nivel lógico bien definido en un pin en todas las condiciones. Como recordatorio, los circuitos
-lógicos digitales tienen tres estados lógicos: alto, bajo y flotante (o alta impedancia). El estado de alta impedancia se produce cuando el pin no se arrastra a un nivel lógico alto o bajo, sino que se deja "flotando". Una buena ilustración de esto es un pin de entrada no conectado de un microcontrolador. No se encuentra ni en un estado lógico alto ni bajo, y un microcontrolador podría interpretar de manera imprevisible el valor de entrada como máximo lógico o bajo lógico. Si no hubiera la resistencia de tracción, la entrada flotaría cuando el interruptor esté abierto y bajaría solo cuando el interruptor esté cerrado.
+Les resistències pull-up són resistències que s'utilitzen en circuits lògics per garantir un nivell lògic ben definit en un pin en totes les condicions. Com a recordatori, els circuits
+lògics digitals tenen tres estats lògics: alt, baix i flotant (o alta impedància). L'estat d'alta impedància es produeix quan el pin no s'arrossega a un nivell lògic alt o baix, sinó que es deixa "flotant". Una bona il·lustració d'això és un pin d'entrada no connectat d'un microcontrolador. No es troba ni en un estat lògic alt ni baix, i un microcontrolador podria interpretar de manera imprevisible el valor d'entrada com a màxim lògic o baix lògic. Si no hi haguera la resistència de tracció, l'entrada flotaria quan l'interruptor estiga obert i baixaria només quan l'interruptor estiga tancat.
 
 ## Pull-down
 
-![Pull-down][img2] {: .centered}
+![Pull-down][img2]
 
-Las resistencias pull-down funcionan de la misma manera que las resistencias pull-up, excepto que llevan el pin hasta un valor lógico bajo. Se conectan entre tierra y el pin correspondiente de un
-dispositivo. En la figura se puede ver un ejemplo de resistencia desplegable en un circuito digital. Un interruptor de pulsador está conectado entre la tensión de alimentación y un pin del microcontrolador. En este circuito, cuando el interruptor está cerrado, la entrada del microcontrolador tiene un valor lógico elevado, pero cuando el interruptor está abierto, la resistencia desplegable hace bajar la tensión de entrada a tierra (valor cero lógico), evitando estado indefinido en la entrada. La resistencia desplegable debe tener una resistencia más grande que la impedancia del circuito lógico, o bien podría ser capaz de bajar demasiado la tensión y la señal de entrada al pin se mantendría en un valor lógico constante, independientemente de la posición del conmutador.
+Les resistències pull-down funcionen de la mateixa manera que les resistències pull-up, tret que porten el pin fins a un valor lògic baix. Es connecten entre terra i el pin corresponent d'un
+dispositiu. A la figura es pot veure un exemple de resistència desplegable en un circuit digital. Un interruptor de polsador està connectat entre la tensió d'alimentació i un pin del microcontrolador. En aquest circuit, quan l'interruptor està tancat, l'entrada del microcontrolador té un valor lògic elevat, però quan l'interruptor està obert, la resistència desplegable fa baixar la tensió d'entrada a terra (valor zero lògic), evitant estat indefinit a l'entrada. La resistència desplegable ha de tindre una resistència més gran que la impedància del circuit lògic, o bé podria ser capaç de baixar massa la tensió i la senyal d'entrada al pin es mantindria a un valor lògic constant, independentment de la posició del commutador.
 
-## Conclusión
+## Conclusió
 
-Las resistencias pull-up no son un tipo especial de resistencias; son simples resistencias de valor fijo conectadas entre la alimentación de tensión (generalmente + 5V) y el pin adecuado, lo que resulta en definir la tensión de entrada o salida en ausencia de una señal de conducción.
+Les resistències pull-up no són un tipus especial de resistències; són simples resistències de valor fix connectades entre l'alimentació de tensió (generalment + 5V) i el pin adequat, cosa que resulta en definir la tensió d'entrada o sortida en absència d'un senyal de conducció.
