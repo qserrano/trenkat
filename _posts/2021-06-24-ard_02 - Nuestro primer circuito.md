@@ -12,17 +12,17 @@ tags: ["arduino", "LED", "resistència", "protoboard", "esquema elèctric"]
 [img1]: /assets/imatges/ard/ard_02_01.png "Esquema elèctric"
 [img2]: /assets/imatges/ard/ard_02_02.jpg "Esquema de muntatge"
 
-## Objetivos
+## Objectius
 
 El objectiu de aquesta sessió és fixar algunes idees bàsiques sobre electrònica, muntar un circuit amb LED i resistència i comprendre l'esquema elèctric, aprendre com utilitzar la protoboard i instal·lar el programa «Blinking LED»
 
-## Material requerido
+## Material requerit
 
-|                                 Imagen                                 | Descripción               |
+|                                 Imatge                                 | Descripció               |
 | :--------------------------------------------------------------------: | :----------------------- |
 |   <img src="/assets/imatges/mat/mat_unor3.png" width="50" height="50">    | Arduino Uno o compatible |
 | <img src="/assets/imatges/mat/mat_protoboard.png" width="50" height="50"> | Una protoboard           |
-|   <img src="/assets/imatges/mat/mat_cables.png" width="50" height="50">   | Cables de conexió       |
+|   <img src="/assets/imatges/mat/mat_cables.png" width="50" height="50">   | Cables de connexió       |
 |    <img src="/assets/imatges/mat/mat_led.png" width="50" height="50">     | Un diode led             |
 |  <img src="/assets/imatges/mat/mat_resis330.png" width="50" height="50">  | Una resistència 330 Ohms |
 

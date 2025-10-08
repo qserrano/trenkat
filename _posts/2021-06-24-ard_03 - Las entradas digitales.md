@@ -1,121 +1,121 @@
 ---
 layout: post
-title: "03 - Las entradas digitales"
+title: "03 - Les entrades digitals"
 author: "qode66"
 description: "Conocer las entradas digitales y leer un pulsador. Presentar los valores booleanos y un operador: Negación."
 date: 2021-06-24 17:40:00 +0200
 categories: arduino basic
-excerpt: "Conocer las entradas digitales y leer un pulsador. Presentar los valores booleanos y un operador: Negación."
-tags: ["arduino", "LED", "resistencia", "protoboard", "esquema eléctrico", "pulsador"]
+excerpt: "Coneixer les entrades digitals i llegir un pulsador. Presentar els valors booleanos i un operador: Negació."
+tags: ["arduino", "LED", "resistència", "protoboard", "esquema elèctric", "pulsador"]
 ---
 
 [img1]: /assets/imatges/ard/ard_03_01.jpg "Esquema eléctrico"
 [img2]: /assets/imatges/ard/ard_03_02.jpg "Montaje"
 
-## Objetivos
+## Objectius
 
-La finalidad de la lección es conocer las entradas digitales y aprovecharemos para leer un pulsador. Presentaremos los valores booleanos y un operador: Negación.
+La finalitat de la lliçó és conèixer les entrades digitals i aprofitarem per llegir un polsador. Presentarem els valors booleans i un operador: Negació.
 
-## Material requerido
+## Material requerit
 
-|                                 Imagen                                 | Descripción               |
+|                                 Imatge                                 | Descripció              |
 | :--------------------------------------------------------------------: | :----------------------- |
 |   <img src="/assets/imatges/mat/mat_unor3.png" width="50" height="50">    | Arduino Uno o compatible |
 | <img src="/assets/imatges/mat/mat_protoboard.png" width="50" height="50"> | Una protoboard           |
-|   <img src="/assets/imatges/mat/mat_cables.png" width="50" height="50">   | Cables de conexión       |
-|    <img src="/assets/imatges/mat/mat_led.png" width="50" height="50">     | Un diodo led             |
-|  <img src="/assets/imatges/mat/mat_resis330.png" width="50" height="50">  | 2x resistencia 330 Ohms  |
+|   <img src="/assets/imatges/mat/mat_cables.png" width="50" height="50">   | Cables de connexió       |
+|    <img src="/assets/imatges/mat/mat_led.png" width="50" height="50">     | Un diode led             |
+|  <img src="/assets/imatges/mat/mat_resis330.png" width="50" height="50">  | 2x resistència 330 Ohms  |
 |  <img src="/assets/imatges/mat/mat_polsador.png" width="50" height="50">  | Un pulsador              |
 
-## Entradas digitales
+## Entrades digitals
 
-Con frecuencia en electrónica necesitamos saber si una luz está encendida o apagada, si alguien ha pulsado un botón o si una puerta ha quedado abierta o está cerrada.
+Amb freqüència en electrònica necessitem saber si una llum està encesa o apagada, si algú ha premut un botó o si una porta ha quedat oberta o està tancada.
 
-A este tipo de señales todo/nada, SI/NO, TRUE/FALSE, 0/1 se les llama digitales, y podemos manejarlas con los pines del 0 al 13 de Arduino y por eso hablamos de pines digitales.
+A aquesta mena de senyals tot/res, SI/NO, TRUE/FALSE, 0/1 se'n diu digitals, i podem manejar-les amb els pins de 0 al 13 de Arduino i per això parlem de pins digitals.
 
-Muchos de los sensores y actuadores que vemos en el mundo real son digitales:
+Molts dels sensors i actuadors que veiem en el món real són digitals:
 
-- _Como actuadores digitales, tenemos luces, alarmas, sirenas, desbloqueo de puertas, etc._
-- _Como sensores digitales podemos mencionar botones y pulsadores, Finales de carrera, desbordamiento de nivel, sensores de llamas, humo o gases tóxicos._
+- _Com a actuadors digitals, tenim llums, alarmes, sirenes, desbloqueig de portes, etc._
+- _Com a sensors digitals podem esmentar botons i polsadors, Finals de carrera, desbordament de nivell, sensors de flames, fum o gasos tòxics._
 
-Hemos visto que Arduino puede usar los **pines digitales** como salidas todo o nada para encender un LED. De la misma manera podemos leer valores, todo o nada, del mundo exterior.
+Hem vist que Arduino poden usar els **pins digitals** com a eixides tot o res per a encendre un LED. De la mateixa manera podem llegir valors, tot o res, del món exterior.
 
-En esta lección veremos que los **pines digitales** de Arduino pueden ser usados tanto de entrada como de salida. Leeremos un botón o pulsador externo y encenderemos o apagaremos un LED en función de que el botón se pulse o no.
+En aquesta lliçó veurem que els **pins digitals** de Arduino poden ser usats tant d'entrada com d'eixida. Llegirem un botó o polsador extern i encendrem o apagarem un LED en funció que el botó es prema o no.
 
-## Esquema electrónico del circuito
+## Esquema electrònic del circuit
 
-Montaremos un circuito con un diodo LED y resistencia conectado al pin digital 10 de Arduino, tal como vimos en las lecciones previas y además un segundo circuito con un pulsador S1 conectado al pin 6 con una resistencia como se muestra en el diagrama siguiente.
+Muntarem un circuit amb un díode LED i resistència connectat al pin digital 10 de Arduino, tal com vam veure en les lliçons prèvies i a més un segon circuit amb un polsador S1 connectat al pin 6 amb una resistència com es mostra en el diagrama següent.
 
-!["Esquema eléctrico"][img1] {: .centered}
+!["Esquema elèctric"][img1]
 
-Obsérvese que mientras no pulsemos S1 el pin 6 de Arduino está conectado a 5V a través de la resistencia R3 forzando una lectura de tensión alta (HIGH). En cambio cuando pulsemos S1 cerraremos el circuito del pin 6 a negativo con lo que leerá tensión baja, LOW. En ambos casos tenemos un valor de tensión definido.
+Observe's que mentre no premem S1 el pin 6 de Arduino està connectat a 5V a través de la resistència R3 forçant una lectura de tensió alta (HIGH). En canvi quan premem S1 tancarem el circuit del pin 6 a negatiu amb el que llegirà tensió baixa, LOW. En tots dos casos tenim un valor de tensió definit.
 
-Si no pusiéramos la resistencia R3, al pulsar S1 leeríamos correctamente LOW en el pin 6. Pero al dejar de pulsar S1 el pin 6 estaría en un estado flotante, que es ni HIGH ni LOW sino indeterminado. Como esto es inaceptable en circuitos digitales forzamos una lectura alta con R3.
+Si no posàrem la resistència R3, en prémer S1 llegiríem correctament LOW en el pin 6. Però en deixar de prémer S1 el pin 6 estaria en un estat flotant, que és ni HIGH ni LOW sinó indeterminat. Com això és inacceptable en circuits digitals forcem una lectura alta amb R3.
 
-- _A esta resistencia que fuerza el valor alto en vacío se le conoce como **pullup.** Si la conectáramos a masa para forzar una lectura a negativo se diría **pulldown**._
-- _Esta resistencia es clave porque las lecturas del pulsador sean consistentes. El circuito, simplemente, no funcionará bien si se omite (volveremos sobre esto)._
+- _A aquesta resistència que força el valor alt en buit se'l coneix com **pullup.** Si la connectàrem a massa per a forçar una lectura a negatiu se'n diria **pulldown**._
+- _Aquesta resistència és clau perquè les lectures del polsador siguen consistents. El circuit, simplement, no funcionarà bé si s'omet (tornarem sobre això)._
 
-Y aquí tenemos el esquema para protoboard del circuito.
+I ací tenim l'esquema per a protoboard del circuit.
 
-![Montaje][img2] {: .centered}  
+![Muntatge][img2]
 
-- _En este esquema hemos seguido la práctica habitual de usar cables negros para conectar a masa y cables rojos para conectar a tensión (5V)._
-- _Obsérvese que el pulsador S1 tiene cuatro pines (el que está sobre la resistencia horizontal). Esto es porque cada entrada del interruptor tiene dos pines conectados. En nuestro circuito simplemente ignoramos los pines secundarios._
+- _En aquest esquema hem seguit la pràctica habitual d'usar cables negres per a connectar a massa i cables rojos per a connectar a tensió (5V)._
+- _Observe's que el polsador S1 té quatre pins (el que està sobre la resistència horitzontal). Això és perquè cada entrada de l'interruptor té dos pins connectats. En el nostre circuit simplement ignorem els pins secundaris._
 
-## Leyendo los pulsadores
+## Llegint els polsadors
 
-Comenzamos haciendo un programa que haga que el LED se encienda cuando pulsemos el botón y se apague cuando lo soltemos. Para esto pediremos a Arduino que configure el pin digital 10 (D10) como salida para manejar el LED, y el pin digital 6 (D6) como entrada para leer el botón.
+Comencem fent un programa que faça que el LED s'encenga quan premem el botó i s'apague quan el soltem. Per a això demanarem a Arduino que configure el pin digital 10 (D10) com a eixida per a manejar el LED, i el pin digital 6 (D6) com a entrada per a llegir el botó.
 
-Normalmente en programas sencillos basta con poner el número de pin en las instrucciones. Pero a medida que el programa se complica esto tiende a provocar errores difíciles de detectar.
+Normalment en programes senzills n'hi ha prou amb posar el número de pin en les instruccions. Però a mesura que el programa es complica això tendeix a provocar errors difícils de detectar.
 
-Por eso es costumbre definir **variables** con los números de pin que usamos, de manera que podamos modificarlos tocando en un solo lugar (y no teniendo que buscar a lo largo del programa). Escribiremos esto un poco más elegantemente:
+Per això és costum definir **variables** amb els números de pin que usem, de manera que puguem modificar-los tocant en un sol lloc (i no havent de buscar al llarg del programa). Escriurem això una mica més elegantment:
 
 ```Arduino
 int LED = 10 ;
-int boton = 6;
+int boto = 6;
 
 void setup()
 {
-pinMode( LED, OUTPUT) ; // LED como salida
-pinMode( boton , INPUT) ;// botón como entrada
+pinMode( LED, OUTPUT) ; // LED com a eixida
+pinMode( boto , INPUT) ;// botó com a entrada
 }
 ```
 
-- _Atención: C++ diferencia entre mayúsculas y minúsculas y por tanto LED, Led y led no son lo mismo en absoluto. De la misma manera, pinMode es correcto y en cambio pinmode generará un error de compilador fulminante._
-- _He usado la variable boton sin acento porque no es recomendable usarlos ni la ñ en los nombres de variables, porque pueden pasar cosas extrañas._
+- _Atenció: C++ diferència entre majúscules i minúscules i per tant LED, Led i led no són el mateix en absolut. De la mateixa manera, pinMode és correcte i en canvi pinmode generarà un error de compilador fulminant._
+- _He usat la variable boto sense accent perquè no és recomanable usar-los ni la ñ en els noms de variables, perquè poden passar coses estranyes._
 
-Vimos que para encender el LED bastaba usar `digitalWrite(LED, HIGH)`. Para leer un botón se puede hacer algo similar: `digitalRead(boton)`. Veamos cómo podría ser nuestro **loop**:
+Vam veure que per a encendre el LED bastava usar `digitalWrite(LED, HIGH)`. Per a llegir un botó es pot fer una cosa similar: `digitalRead(boto)`. Vegem com podria ser nostre **loop**:
 
 ```Arduino
 void loop()
 {
-int valor = digitalRead(boton) ; // leemos el valor de boton en valor
+int valor = digitalRead(boto) ; // llegim el valor de boto en valor
 digitalWrite( LED, valor) ;
 }
 ```
 
-¿Fácil no? Aunque el LED está encendido hasta que pulsemos el botón y se apaga al pulsar.
+Fàcil no? Encara que el LED està encés fins que premem el botó i s'apaga en prémer.
 
-¿Cómo podríamos hacer lo contrario, que el LED se encienda al pulsar y se apague si no? Bastaría con escribir en LED lo contrario de lo que leemos en el botón.
+Com podríem fer el contrari, que el LED s'encenga en prémer i s'apague si no? Bastaria amb escriure en LED el contrari del que llegim en el botó.
 
-Existe un operador que hace esto exactamente el operador **negación** **" ! "** . Si un valor dado **x** es HIGH, entonces **!x** es LOW y viceversa.
+Existeix un operador que fa això exactament l'operador **negació** **" ! "** . Si un valor donat **x** és HIGH, llavors **!x** és LOW i viceversa.
 
-- _Un operador es un símbolo que relaciona diversos valores entre sí, o que modifica el valor de una variable de una manera previsible._
-- _Ejemplos de operadores en C++ son los matemáticos como +,-,\* , / ; y hay otros como la negación ! o el cambio de signo de una variable : -- x. Iremos viendo más._
+- _Un operador és un símbol que relaciona diversos valors entre si, o que modifica el valor d'una variable d'una manera previsible._
+- _Exemples d'operadors en C++ són els matemàtics com +,-,\* , / ; i hi ha uns altres com la negació ! o el canvi de signe d'una variable : -- x. Anirem veient més._
 
-De hecho este tipo de operaciones son tan frecuentes que C++ incorpora un tipo llamado **bool** o **booleano** que solo acepta dos valores TRUE (cierto) y FALSE (falso) y son completamente equivalentes al 1/0, y al HIGH/LOW.
+De fet aquest tipus d'operacions són tan freqüents que C++ incorpora un tipus anomenat **bool** o **booleà** que només accepta dos valors TRUE (cert) i FALSE (fals) i són completament equivalents a l'1/0, i al HIGH/LOW.
 
-Este nuevo programa sería algo así:
+Aquest nou programa seria una cosa així:
 
 ```Arduino
 void loop()
 {
-bool valor = digitalRead(boton) ; // leemos el valor de boton en valor
-digitalWrite( LED, !valor) ; // Escribimos valor contrario en LED
+bool valor = digitalRead(boto) ; // llegim el valor de boto en valor
+digitalWrite( LED, !valor) ; // Escrivim valor contrari en LED
 }
 ```
 
-Hemos definido valor como bool, porque podemos usar el valor de tensión alto como TRUE y el valor bajo como FALSE. SI el botón no está pulsado el D6 leerá TRUE y por tanto pondrá LED a FALSE. En caso contrario encenderá el LED.
+Hem definit valor com bool, perquè podem usar el valor de tensió alt com TRUE i el valor baix com FALSE. SI el botó no està premut el D6 llegirà TRUE i per tant posarà LED a FALSE. En cas contrari encendrà el LED.
 
 ```Arduino
 void loop()
@@ -126,9 +126,9 @@ delay ( 1000) ;
 }
 ```
 
-De hecho podríamos escribir una variante curiosa del blinking LED usando el operador negación, en solo dos líneas:
+De fet podríem escriure una variant curiosa del blinking LED usant l'operador negació, en només dues línies:
 
-- _Podemos leer la situación actual de un pin (nos retorna su estado actual), aunque lo hayamos definido como salida, En cambio no podemos escribir en un pin definido como entrada._
+- _Podem llegir la situació actual d'un pin (ens retorna el seu estat actual), encara quan l'hàgem definit com a eixida, En canvi no podem escriure en un pin definit com a entrada._
 
 ```Arduino
 void loop()
@@ -138,13 +138,13 @@ delay ( 1000) ;
 }
 ```
 
-- La primera línea lee la situación del LED y la invierte, después escribe esto en LED.
-- _Las instrucciones dentro de los paréntesis se ejecutan antes que las que están fuera de ellos. Por eso el digitalRead se ejecuta antes que el digitalWrite._
+- La primera línia llig la situació del LED i la inverteix, després escriu això en LED.
+- _Les instruccions dins dels parèntesis s'executen abans que les que estan fora d'ells. Per això el digitalRead s'executa abans que el digitalWrite._
 
-## Resumen de la lección
+## Resum de la lliçó
 
-- Hemos visto una manera de leer señales digitales en Arduino del mundo exterior además de poder enviarlas:
+- Hem vist una manera de llegir senyals digitals en Arduino del món exterior a més de poder enviar-les:
   - digitalRead( pin)
   - digitalWrite( pin , valor)
-- Hemos conocido un nuevo componente: el pulsador.
-- Conocemos un nuevo tipo en C++, el booleano y un nuevo operador de negación.
+- Hem conegut un nou component: el polsador.
+- Coneixem un nou tipus en C++, el booleà i un nou operador de negació.
