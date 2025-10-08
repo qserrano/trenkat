@@ -9,7 +9,7 @@ excerpt: "En aquesta lliçó aprendrem a programar el nostre primer programa en 
 tags: ["arduino", "programació", "boceto", "sketch", "IDE"]
 ---
 
-[img1]: /assets/imatges/ard/ard-01-01.jpg "Compilador"
+[img1]: /assets/imatges/ard/ard_01_01.jpg "Compilador"
 [img2]: /assets/imatges/ard/ard_01_02.png "Entradas y salidas"
 [img3]: /assets/imatges/ard/ard_01_03.png "Verifica"
 [img4]: /assets/imatges/ard/ard_01_04.png "Sube"
