@@ -10,7 +10,7 @@ permalink: /categorias/arduino/
     {% for post in site.posts %}
         {% if post.categories contains "arduino" %}
         <article class="articulo">
-            <h2><a href="{{ {{ site.baseurl }}/post.url }}">{{ post.title }}</a></h2>
+            <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
             <div class="fecha">
                 Publicat el {{ post.date | date: "%-d de %B, %Y" }}
             </div>
