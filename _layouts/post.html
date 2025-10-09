@@ -29,7 +29,7 @@ layout: default
       <div class="post-categories">
         Categorías:
         {% for category in page.categories %}
-          <a href="/categorias/{{ category | slugify }}">{{ category }}</a>
+          <a href="{{ site.baseurl }}/categorias/{{ category | slugify }}">{{ category }}</a>
         {% endfor %}
       </div>
     {% endif %}
