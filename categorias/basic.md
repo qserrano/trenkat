@@ -14,12 +14,12 @@ permalink: /categorias/basic/
         {% for post in sorted_posts %}
             {% if post.categories contains "arduino" and post.categories contains "basic" %}
             <article class="articulo">
-                <a href="{{ post.url }}">{{ post.title }}</a>
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
             </article>
             {% endif %}
         {% endfor %}
     </div>
     <div class="tutorial-image">
-            <img src="/assets/imatges/tutoriales/tutorial-arduino-basic.png" alt="Tutorial Arduino bàsic" width="300" height=auto>
+            <img src="{{ site.baseurl }}/assets/imatges/tutoriales/tutorial-arduino-basic.png" alt="Tutorial Arduino bàsic" width="300" height=auto>
     </div>
 </div>
