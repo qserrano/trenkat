@@ -14,12 +14,12 @@ permalink: /categorias/fonaments/
         {% for post in sorted_posts %}
             {% if post.categories contains "pneumatica" and post.categories contains "fonaments" %}
             <article class="articulo">
-                <a href="{{ post.url }}">{{ post.title }}</a>
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
             </article>
             {% endif %}
         {% endfor %}
     </div>
     <div class="tutorial-image">
-            <img src="/assets/imatges/categorias/neumatica-fundamentos.png" alt="Fonaments de Pneumàtica" width="300" height=auto>
+            <img src="{{ site.baseurl }}/assets/imatges/categorias/neumatica-fundamentos.png" alt="Fonaments de Pneumàtica" width="300" height=auto>
     </div>
 </div>
