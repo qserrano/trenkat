@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Arduino sensors
-permalink: /categorias/sensores/
+permalink: /categorias/sensors/
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/categories.css' | relative_url }}">
@@ -12,7 +12,7 @@ permalink: /categorias/sensores/
 
         {% assign sorted_posts = site.posts | sort: 'date' %}
         {% for post in sorted_posts %}
-            {% if post.categories contains "arduino" and post.categories contains "sensores" %}
+            {% if post.categories contains "arduino" and post.categories contains "sensors" %}
             <article class="articulo">
                 <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
             </article>
