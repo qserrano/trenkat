@@ -1,15 +1,27 @@
 <header>
-  <div class="header-site-title">
-    <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-    <div class="header-logos" style="display:flex; align-items:center; gap: 8px;">
-      <img class="header-site-title-logo" src="{{ site.baseurl }}/assets/imatges/logos/logo-trenkat.png" alt="Logo trenkat" width="100">
-      <a id="qserrano-link" href="https://qserrano.es/" target="_blank" rel="noopener noreferrer" title="Q. Serrano">
-        <img class="header-site-title-logo" src="{{ site.baseurl }}/assets/imatges/logos/logo-qode66-gris.png" alt="Logo Qode66" width="100">
-      </a>
+    <div class="header-container">
+      <div class="header-site-title">
+        <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+        <div class="header-logos">
+          <img class="header-site-title-logo" src="{{ site.baseurl }}/assets/imatges/logos/logo-trenkat.png" alt="Logo trenkat" width="100">
+          <a id="qserrano-link" href="https://qserrano.es" target="_blank" rel="noopener noreferrer" title="Q. Serrano">
+            <img class="header-site-title-logo" src="{{ site.baseurl }}/assets/imatges/logos/logo-qode66-gris.png" alt="Logo qode66" width="100">
+          </a>
+        </div>
+      </div>
+      
+      <!-- Botón del menú hamburguesa para móviles -->
+      <button class="mobile-menu-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <div class="header-navigation">
+        {% include navigation.html %}
+      </div>
     </div>
-  </div>
-  <div class="header-navigation">
-    {% include navigation.html %}
-  </div>
-
-</header> 
+    
+    <!-- Script para el menú móvil -->
+    <script src="{{ '/assets/js/mobile-menu.js' | relative_url }}"></script>
+  </header> 
