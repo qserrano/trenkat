@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Arduino actuadors
-permalink: /categorias/actuadores/
+permalink: /categorias/actuadors/
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/categories.css' | relative_url }}">
@@ -12,7 +12,7 @@ permalink: /categorias/actuadores/
 
         {% assign sorted_posts = site.posts | sort: 'date' %}
         {% for post in sorted_posts %}
-            {% if post.categories contains "arduino" and post.categories contains "actuadores" %}
+            {% if post.categories contains "arduino" and post.categories contains "actuadors" %}
             <article class="articulo">
                 <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
             </article>
